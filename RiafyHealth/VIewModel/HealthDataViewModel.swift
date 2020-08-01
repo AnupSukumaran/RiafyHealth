@@ -22,6 +22,8 @@ class HealthDataViewModel: NSObject {
                 let healthDataModel = data.healthDataModel
                 print("healthDataModel = \(healthDataModel)")
                 
+                
+                
             case .failure(errorStr: let errStr, model: _):
                 print("errStr = \(errStr)")
                 

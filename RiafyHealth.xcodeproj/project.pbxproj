@@ -36,6 +36,11 @@
 		18BE8E7A24D59B480094B00A /* HealthDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E7924D59B480094B00A /* HealthDataViewModel.swift */; };
 		18BE8E7E24D59FE10094B00A /* UIButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E7C24D59F9E0094B00A /* UIButtonCustom.swift */; };
 		18BE8E7F24D59FE40094B00A /* UIViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E7D24D59F9E0094B00A /* UIViewCustom.swift */; };
+		18BE8E8224D5B4B60094B00A /* CellConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E8124D5B4B60094B00A /* CellConfigModel.swift */; };
+		18BE8E8524D5B56B0094B00A /* ActivityCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E8424D5B56B0094B00A /* ActivityCellModel.swift */; };
+		18BE8E8724D5B6790094B00A /* StepsCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E8624D5B6790094B00A /* StepsCellModel.swift */; };
+		18BE8E8924D5B7100094B00A /* ArticlesCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E8824D5B7100094B00A /* ArticlesCellModel.swift */; };
+		18BE8E8C24D5B9330094B00A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 18BE8E8B24D5B9330094B00A /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +74,10 @@
 		18BE8E7924D59B480094B00A /* HealthDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataViewModel.swift; sourceTree = "<group>"; };
 		18BE8E7C24D59F9E0094B00A /* UIButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonCustom.swift; sourceTree = "<group>"; };
 		18BE8E7D24D59F9E0094B00A /* UIViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewCustom.swift; sourceTree = "<group>"; };
+		18BE8E8124D5B4B60094B00A /* CellConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigModel.swift; sourceTree = "<group>"; };
+		18BE8E8424D5B56B0094B00A /* ActivityCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCellModel.swift; sourceTree = "<group>"; };
+		18BE8E8624D5B6790094B00A /* StepsCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsCellModel.swift; sourceTree = "<group>"; };
+		18BE8E8824D5B7100094B00A /* ArticlesCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BE8E8C24D5B9330094B00A /* SDWebImage in Frameworks */,
 				18BE8E4C24D588E00094B00A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +112,7 @@
 		18BE8E3524D588690094B00A /* RiafyHealth */ = {
 			isa = PBXGroup;
 			children = (
+				18BE8E8024D5B4920094B00A /* Protocols */,
 				18BE8E7B24D59F7E0094B00A /* Views */,
 				18BE8E5324D58E360094B00A /* Models */,
 				18BE8E5024D58D990094B00A /* NetworkModule */,
@@ -142,6 +153,7 @@
 		18BE8E5324D58E360094B00A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				18BE8E8324D5B5520094B00A /* CellModels */,
 				18BE8E5F24D58FC00094B00A /* HealthDataModel */,
 				18BE8E5424D58F660094B00A /* HomeModel */,
 				18BE8E7224D592330094B00A /* ModelResponse.swift */,
@@ -191,6 +203,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		18BE8E8024D5B4920094B00A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				18BE8E8124D5B4B60094B00A /* CellConfigModel.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		18BE8E8324D5B5520094B00A /* CellModels */ = {
+			isa = PBXGroup;
+			children = (
+				18BE8E8424D5B56B0094B00A /* ActivityCellModel.swift */,
+				18BE8E8624D5B6790094B00A /* StepsCellModel.swift */,
+				18BE8E8824D5B7100094B00A /* ArticlesCellModel.swift */,
+			);
+			path = CellModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,6 +239,7 @@
 			name = RiafyHealth;
 			packageProductDependencies = (
 				18BE8E4B24D588E00094B00A /* Alamofire */,
+				18BE8E8B24D5B9330094B00A /* SDWebImage */,
 			);
 			productName = RiafyHealth;
 			productReference = 18BE8E3324D588690094B00A /* RiafyHealth.app */;
@@ -240,6 +271,7 @@
 			mainGroup = 18BE8E2A24D588690094B00A;
 			packageReferences = (
 				18BE8E4A24D588E00094B00A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				18BE8E8A24D5B9330094B00A /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 18BE8E3424D588690094B00A /* Products */;
 			projectDirPath = "";
@@ -271,6 +303,7 @@
 				18BE8E7824D598A70094B00A /* SecondViewController.swift in Sources */,
 				18BE8E6F24D5916D0094B00A /* String+Ext.swift in Sources */,
 				18BE8E5D24D58F820094B00A /* Steps.swift in Sources */,
+				18BE8E8724D5B6790094B00A /* StepsCellModel.swift in Sources */,
 				18BE8E3B24D588690094B00A /* FirstViewController.swift in Sources */,
 				18BE8E4F24D58C4E0094B00A /* NSObject+Ext.swift in Sources */,
 				18BE8E5A24D58F820094B00A /* HomeModel.swift in Sources */,
@@ -284,9 +317,12 @@
 				18BE8E7A24D59B480094B00A /* HealthDataViewModel.swift in Sources */,
 				18BE8E6B24D590F70094B00A /* APILibrary.swift in Sources */,
 				18BE8E6824D590700094B00A /* SoundLevels.swift in Sources */,
+				18BE8E8924D5B7100094B00A /* ArticlesCellModel.swift in Sources */,
 				18BE8E6524D590700094B00A /* SleepHours.swift in Sources */,
+				18BE8E8224D5B4B60094B00A /* CellConfigModel.swift in Sources */,
 				18BE8E6724D590700094B00A /* HealthDataModel.swift in Sources */,
 				18BE8E7624D595CB0094B00A /* HomeViewModel.swift in Sources */,
+				18BE8E8524D5B56B0094B00A /* ActivityCellModel.swift in Sources */,
 				18BE8E7F24D59FE40094B00A /* UIViewCustom.swift in Sources */,
 				18BE8E6624D590700094B00A /* ActiveEnergy.swift in Sources */,
 				18BE8E7E24D59FE10094B00A /* UIButtonCustom.swift in Sources */,
@@ -500,6 +536,14 @@
 				minimumVersion = 5.2.2;
 			};
 		};
+		18BE8E8A24D5B9330094B00A /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -507,6 +551,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 18BE8E4A24D588E00094B00A /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		18BE8E8B24D5B9330094B00A /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18BE8E8A24D5B9330094B00A /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
