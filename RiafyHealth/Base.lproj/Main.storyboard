@@ -912,11 +912,11 @@
             </objects>
             <point key="canvasLocation" x="847.82608695652175" y="1650.6696428571429"/>
         </scene>
-        <!--Item-->
+        <!--Browse-->
         <scene sceneID="bi5-c1-Qsj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2HZ-pm-uak" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="8Ee-Lv-miC"/>
+                    <tabBarItem key="tabBarItem" title="Browse" image="boxs" id="8Ee-Lv-miC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pC0-pf-VAc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -931,11 +931,11 @@
             </objects>
             <point key="canvasLocation" x="958" y="966"/>
         </scene>
-        <!--Item-->
+        <!--Summary-->
         <scene sceneID="jpe-C0-7hI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AOh-Fn-ZnO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="GWY-aT-Pr2"/>
+                    <tabBarItem key="tabBarItem" title="Summary" image="heart" id="GWY-aT-Pr2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="GlN-Vh-6Bs">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -973,7 +973,9 @@
     </scenes>
     <resources>
         <image name="arrowImg" width="24" height="24"/>
+        <image name="boxs" width="24" height="24"/>
         <image name="dummyFire" width="48" height="48"/>
+        <image name="heart" width="24" height="24"/>
         <image name="tick" width="96" height="96"/>
     </resources>
 </document>
