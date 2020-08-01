@@ -34,6 +34,8 @@
 		18BE8E7624D595CB0094B00A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E7524D595CB0094B00A /* HomeViewModel.swift */; };
 		18BE8E7824D598A70094B00A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E7724D598A70094B00A /* SecondViewController.swift */; };
 		18BE8E7A24D59B480094B00A /* HealthDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E7924D59B480094B00A /* HealthDataViewModel.swift */; };
+		18BE8E7E24D59FE10094B00A /* UIButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E7C24D59F9E0094B00A /* UIButtonCustom.swift */; };
+		18BE8E7F24D59FE40094B00A /* UIViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E7D24D59F9E0094B00A /* UIViewCustom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,8 @@
 		18BE8E7524D595CB0094B00A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		18BE8E7724D598A70094B00A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		18BE8E7924D59B480094B00A /* HealthDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataViewModel.swift; sourceTree = "<group>"; };
+		18BE8E7C24D59F9E0094B00A /* UIButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonCustom.swift; sourceTree = "<group>"; };
+		18BE8E7D24D59F9E0094B00A /* UIViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewCustom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 		18BE8E3524D588690094B00A /* RiafyHealth */ = {
 			isa = PBXGroup;
 			children = (
+				18BE8E7B24D59F7E0094B00A /* Views */,
 				18BE8E5324D58E360094B00A /* Models */,
 				18BE8E5024D58D990094B00A /* NetworkModule */,
 				18BE8E4D24D58C370094B00A /* Exts */,
@@ -175,6 +180,15 @@
 				18BE8E7924D59B480094B00A /* HealthDataViewModel.swift */,
 			);
 			path = VIewModel;
+			sourceTree = "<group>";
+		};
+		18BE8E7B24D59F7E0094B00A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18BE8E7C24D59F9E0094B00A /* UIButtonCustom.swift */,
+				18BE8E7D24D59F9E0094B00A /* UIViewCustom.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +287,9 @@
 				18BE8E6524D590700094B00A /* SleepHours.swift in Sources */,
 				18BE8E6724D590700094B00A /* HealthDataModel.swift in Sources */,
 				18BE8E7624D595CB0094B00A /* HomeViewModel.swift in Sources */,
+				18BE8E7F24D59FE40094B00A /* UIViewCustom.swift in Sources */,
 				18BE8E6624D590700094B00A /* ActiveEnergy.swift in Sources */,
+				18BE8E7E24D59FE10094B00A /* UIButtonCustom.swift in Sources */,
 				18BE8E6924D590700094B00A /* StandHours.swift in Sources */,
 				18BE8E7324D592340094B00A /* ModelResponse.swift in Sources */,
 				18BE8E6D24D591240094B00A /* TypeAliases.swift in Sources */,
