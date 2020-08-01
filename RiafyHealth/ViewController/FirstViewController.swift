@@ -66,7 +66,7 @@ class FirstViewController: UIViewController {
         
         homeViewModel.selectedTheArticleHandler = { [weak self] in
             guard let vc = self else {return}
-            vc.callFirstViewController()
+            vc.callWebViewConroller()
         }
     }
     

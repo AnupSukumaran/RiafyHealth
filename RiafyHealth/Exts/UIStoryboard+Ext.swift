@@ -16,4 +16,10 @@ extension UIStoryboard {
     static func firstViewController() -> FirstViewController? {
         return mainStoryboard().instantiateViewController(withIdentifier: FirstViewController.identifier) as? FirstViewController
     }
+    
+    
+    static func webViewController() -> WebViewController? {
+        return mainStoryboard().instantiateViewController(withIdentifier: WebViewController.identifier) as? WebViewController
+    }
+    
 }

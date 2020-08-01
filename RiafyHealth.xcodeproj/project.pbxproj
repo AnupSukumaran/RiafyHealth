@@ -52,6 +52,8 @@
 		18BE8EA024D5DC4A0094B00A /* ArticleWebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E9F24D5DC4A0094B00A /* ArticleWebViewModel.swift */; };
 		18BE8EA224D5DDC50094B00A /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8EA124D5DDC50094B00A /* UIStoryboard+Ext.swift */; };
 		18BE8EA424D5DDD60094B00A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8EA324D5DDD60094B00A /* UIViewController+Ext.swift */; };
+		18BE8EA724D5ED3B0094B00A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8EA624D5ED3B0094B00A /* WebViewController.swift */; };
+		18BE8EAD24D5F1090094B00A /* search.html in Resources */ = {isa = PBXBuildFile; fileRef = 18BE8EAC24D5F1090094B00A /* search.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +102,8 @@
 		18BE8E9F24D5DC4A0094B00A /* ArticleWebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleWebViewModel.swift; sourceTree = "<group>"; };
 		18BE8EA124D5DDC50094B00A /* UIStoryboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Ext.swift"; sourceTree = "<group>"; };
 		18BE8EA324D5DDD60094B00A /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		18BE8EA624D5ED3B0094B00A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		18BE8EAC24D5F1090094B00A /* search.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = search.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 		18BE8E3524D588690094B00A /* RiafyHealth */ = {
 			isa = PBXGroup;
 			children = (
+				18BE8EAB24D5F0F60094B00A /* HTMLFile */,
+				18BE8EA524D5ED180094B00A /* ViewController */,
 				18BE8E8D24D5C0F30094B00A /* CellViewClass */,
 				18BE8E8024D5B4920094B00A /* Protocols */,
 				18BE8E7B24D59F7E0094B00A /* Views */,
@@ -142,7 +148,6 @@
 				18BE8E4D24D58C370094B00A /* Exts */,
 				18BE8E3624D588690094B00A /* AppDelegate.swift */,
 				18BE8E3824D588690094B00A /* SceneDelegate.swift */,
-				18BE8E3A24D588690094B00A /* FirstViewController.swift */,
 				18BE8E7424D595960094B00A /* VIewModel */,
 				18BE8E3C24D588690094B00A /* Main.storyboard */,
 				18BE8E3F24D588700094B00A /* Assets.xcassets */,
@@ -270,6 +275,23 @@
 			path = SectionCells;
 			sourceTree = "<group>";
 		};
+		18BE8EA524D5ED180094B00A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18BE8E3A24D588690094B00A /* FirstViewController.swift */,
+				18BE8EA624D5ED3B0094B00A /* WebViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		18BE8EAB24D5F0F60094B00A /* HTMLFile */ = {
+			isa = PBXGroup;
+			children = (
+				18BE8EAC24D5F1090094B00A /* search.html */,
+			);
+			path = HTMLFile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -336,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BE8EAD24D5F1090094B00A /* search.html in Resources */,
 				18BE8E4324D588700094B00A /* LaunchScreen.storyboard in Resources */,
 				18BE8E4024D588700094B00A /* Assets.xcassets in Resources */,
 				18BE8E3E24D588690094B00A /* Main.storyboard in Resources */,
@@ -385,6 +408,7 @@
 				18BE8EA224D5DDC50094B00A /* UIStoryboard+Ext.swift in Sources */,
 				18BE8EA024D5DC4A0094B00A /* ArticleWebViewModel.swift in Sources */,
 				18BE8E7E24D59FE10094B00A /* UIButtonCustom.swift in Sources */,
+				18BE8EA724D5ED3B0094B00A /* WebViewController.swift in Sources */,
 				18BE8E9324D5C1380094B00A /* ArticleTableViewCell.swift in Sources */,
 				18BE8E6924D590700094B00A /* StandHours.swift in Sources */,
 				18BE8E7324D592340094B00A /* ModelResponse.swift in Sources */,

@@ -22,4 +22,10 @@ extension UIViewController {
         vc.articleWebViewModel = ArticleWebViewModel()
         present(nav(vc, present: .formSheet), animated: true, completion: nil)
     }
+    
+    func callWebViewConroller() {
+        guard let vc = UIStoryboard.webViewController() else {return}
+               
+        present(nav(vc, present: .formSheet), animated: true, completion: nil)
+    }
 }

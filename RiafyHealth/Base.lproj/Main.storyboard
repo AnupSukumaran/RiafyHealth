@@ -662,6 +662,51 @@
             </objects>
             <point key="canvasLocation" x="-7.2463768115942031" y="965.625"/>
         </scene>
+        <!--Article-->
+        <scene sceneID="FuB-mr-NAK">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="ETu-7N-jis" customClass="WebViewController" customModule="RiafyHealth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EFn-kv-MdP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3PW-4f-Kj4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Gbh-1r-qkH" firstAttribute="bottom" secondItem="3PW-4f-Kj4" secondAttribute="bottom" id="8KQ-wG-6Z9"/>
+                            <constraint firstItem="Gbh-1r-qkH" firstAttribute="trailing" secondItem="3PW-4f-Kj4" secondAttribute="trailing" id="QrM-DC-lmM"/>
+                            <constraint firstItem="3PW-4f-Kj4" firstAttribute="leading" secondItem="Gbh-1r-qkH" secondAttribute="leading" id="jN8-Lr-JXo"/>
+                            <constraint firstItem="3PW-4f-Kj4" firstAttribute="top" secondItem="Gbh-1r-qkH" secondAttribute="top" id="vCT-Zq-C92"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gbh-1r-qkH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Article" id="Nn2-Rr-Wtq">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="ImP-fT-END">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dLn-kp-y9p">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="doneBtnAction:" destination="ETu-7N-jis" eventType="touchUpInside" id="m5i-mD-KOr"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="baseView" destination="3PW-4f-Kj4" id="AhW-r5-vQe"/>
+                        <outlet property="doneBtn" destination="dLn-kp-y9p" id="Rz6-Ct-IEN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1N-Zu-roZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.82608695652175" y="1650.6696428571429"/>
+        </scene>
         <!--Item-->
         <scene sceneID="bi5-c1-Qsj">
             <objects>
@@ -701,6 +746,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0SX-iL-DMh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-909" y="966"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ymZ-ta-7GQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iby-fj-Hj1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hh6-OH-Nfu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ETu-7N-jis" kind="relationship" relationship="rootViewController" id="Pxc-ea-K0L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iuP-0R-aip" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62.318840579710148" y="1650.6696428571429"/>
         </scene>
     </scenes>
     <resources>
