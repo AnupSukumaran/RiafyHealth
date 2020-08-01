@@ -30,6 +30,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="c7s-YQ-h4p" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Frg-pB-nG4">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -54,7 +55,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="135" id="jDr-qd-b3f">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityTableViewCell" rowHeight="135" id="jDr-qd-b3f" customClass="ActivityTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="135"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jDr-qd-b3f" id="ufR-EH-7h1">
@@ -260,8 +261,39 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="baseView" destination="z0p-2K-UG5" id="mLu-IZ-wYU"/>
+                                            <outlet property="cellTitleLB" destination="8NN-FS-Lsz" id="yWC-IW-qYz"/>
+                                            <outlet property="iconImgView" destination="AWv-IS-csW" id="FOF-pj-4LO"/>
+                                            <outlet property="lbCalTitle" destination="Whw-Nv-gs4" id="trS-pV-ZWf"/>
+                                            <outlet property="lbCalories" destination="2Vt-cA-UnF" id="NIe-xq-0g9"/>
+                                            <outlet property="lbExercise" destination="U2A-d7-rYZ" id="x3X-JE-1ea"/>
+                                            <outlet property="lbMinuteData" destination="TQW-oe-jTO" id="EXi-Q4-3a3"/>
+                                            <outlet property="lbMinuteTitle" destination="tRB-rM-TtI" id="Qqg-k1-swA"/>
+                                            <outlet property="lbStand" destination="UNr-5h-sQ1" id="4k6-HZ-ADL"/>
+                                            <outlet property="lbStandTimeData" destination="8b1-sV-oJL" id="RsV-5i-4ja"/>
+                                            <outlet property="lbStandhrTitle" destination="L6L-Hd-29u" id="53K-jD-Nzf"/>
+                                            <outlet property="moveTitle" destination="Lzs-T7-E5l" id="uvR-2N-4pW"/>
+                                            <outlet property="stackView1" destination="TQF-cl-bD9" id="Kle-JJ-YhH"/>
+                                            <outlet property="stackView10" destination="i7d-Nx-Mgl" id="CLi-U1-t3u"/>
+                                            <outlet property="stackView11" destination="8hx-M0-ahY" id="X6O-TY-OtV"/>
+                                            <outlet property="stackView12" destination="a50-ew-lWN" id="Krf-9W-2y4"/>
+                                            <outlet property="stackView13" destination="Zgk-ty-sb7" id="e3d-8i-ICy"/>
+                                            <outlet property="stackView2" destination="e0l-UF-1a3" id="xa8-Lm-K8s"/>
+                                            <outlet property="stackView3" destination="0Yh-41-dwu" id="kY6-wf-IYF"/>
+                                            <outlet property="stackView4" destination="P6n-lW-6ZQ" id="xtp-ZK-aHa"/>
+                                            <outlet property="stackView5" destination="fWf-jy-aeL" id="pCZ-i3-RTJ"/>
+                                            <outlet property="stackView6" destination="WPv-9u-TVc" id="rMI-EV-8Jd"/>
+                                            <outlet property="stackView7" destination="Wv4-4v-lKN" id="cKf-M2-Tdp"/>
+                                            <outlet property="stackView8" destination="EFv-5G-CRi" id="f3s-ZT-nOI"/>
+                                            <outlet property="stackView9" destination="Uoj-05-xwx" id="S0R-VC-x9d"/>
+                                            <outlet property="timeLB" destination="hFc-iy-81Y" id="RTw-8w-UlG"/>
+                                            <outlet property="viewDivider1" destination="IDI-UG-q9J" id="2p3-EI-ICs"/>
+                                            <outlet property="viewDivider2" destination="deW-2o-CDz" id="0O2-7p-iFo"/>
+                                            <outlet property="viewDivider3" destination="AlB-tK-YMf" id="3Jx-d1-wKL"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="Izy-C0-EHV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StepsTableViewCell" rowHeight="120" id="Izy-C0-EHV" customClass="StepsTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="163" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Izy-C0-EHV" id="aFb-eS-2Di">
@@ -347,8 +379,19 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="iconImgView" destination="5GF-30-tcU" id="bw2-wn-v1i"/>
+                                            <outlet property="lbStepsData" destination="B1S-s1-TpI" id="Xga-PX-kfe"/>
+                                            <outlet property="lbStepsMainTitle" destination="uCo-t6-3ZF" id="EQw-62-QfQ"/>
+                                            <outlet property="lbStepsTitle" destination="NPm-by-KYx" id="7dQ-JP-pxK"/>
+                                            <outlet property="lbTime" destination="gjl-T1-k3M" id="Ou0-MP-QB7"/>
+                                            <outlet property="stackView1" destination="dLz-xK-QAN" id="QAh-xE-GVD"/>
+                                            <outlet property="stackView2" destination="qVK-Vz-2ZO" id="h1g-z2-xcT"/>
+                                            <outlet property="stackView3" destination="A4j-20-UlV" id="mb6-2p-zBi"/>
+                                            <outlet property="viewBase" destination="wju-ZO-4rJ" id="jyg-DV-zYQ"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="54" id="X0z-6V-siy">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowHealthTableViewCell" rowHeight="54" id="X0z-6V-siy" customClass="ShowHealthTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="283" width="414" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X0z-6V-siy" id="jmJ-Vj-fR5">
@@ -371,6 +414,9 @@
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                             <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                             <state key="normal" title="Show All Health Data"/>
+                                                            <connections>
+                                                                <action selector="showAllHealthDataBtn:" destination="X0z-6V-siy" eventType="touchUpInside" id="L63-VY-3c7"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -398,8 +444,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="showAllHealtBtn" destination="Bjh-kW-vKc" id="bQw-69-rz0"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="54" id="UPB-OW-iNo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SectionType1TableViewCell" rowHeight="54" id="UPB-OW-iNo" customClass="SectionType1TableViewCell" customModule="RiafyHealth" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="337" width="414" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UPB-OW-iNo" id="gTy-Vk-Zua">
@@ -421,8 +470,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="lbTitle" destination="rvO-gp-o1E" id="NgZ-Dh-URy"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="303" id="MJ3-pM-nof">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleTableViewCell" rowHeight="303" id="MJ3-pM-nof" customClass="ArticleTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="391" width="414" height="303"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MJ3-pM-nof" id="7EP-zG-kTN">
@@ -495,6 +547,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="articleTitle" destination="T2o-ww-j8u" id="oJP-HE-sUq"/>
+                                            <outlet property="imgView" destination="yq2-zT-W0w" id="Qs6-UK-8W5"/>
+                                            <outlet property="lbArticleSubTitle" destination="3fG-Oe-vwD" id="bqB-jr-4H9"/>
+                                            <outlet property="viewImgBase" destination="Cgp-8U-IKX" id="kia-yS-rgd"/>
+                                            <outlet property="viewbase" destination="2MT-TR-DcJ" id="vVJ-RW-B9W"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -509,6 +568,9 @@
                         <viewLayoutGuide key="safeArea" id="ICA-DE-6xM"/>
                     </view>
                     <navigationItem key="navigationItem" title="Summary" id="Uu6-Yt-Vod"/>
+                    <connections>
+                        <outlet property="homeListView" destination="Ssq-5b-2h6" id="iMB-K0-Q1X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u4N-v2-7GR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

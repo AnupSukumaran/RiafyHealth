@@ -10,11 +10,20 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
-    var homeViewModel: HomeViewModel! 
+    @IBOutlet weak var homeListView: UITableView!
+    
+    var homeViewModel: HomeViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setUpHomeListView()
+    }
+    
+    func setUpHomeListView() {
+        homeListView.delegate = homeViewModel
+        homeListView.dataSource = homeViewModel
+        homeListView.estimatedRowHeight = 54
+        homeListView.rowHeight = UITableView.automaticDimension
     }
 
 
