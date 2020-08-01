@@ -13,6 +13,8 @@ enum CellType {
     case steps
     case articles
     case showAllData
+    case sleepAnalysis
+    case soundLevel
 }
 
 protocol CellConfigModel {

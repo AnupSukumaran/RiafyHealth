@@ -19,7 +19,7 @@ extension NSObject {
         if let iconImgURL = URL(string: urlStr) {
             imgView.sd_setImage(with: iconImgURL, placeholderImage: nil, options: .highPriority) { (img, err, cache, url) in
                 guard err == nil else {return}
-                
+                 
             }
         }
     }
@@ -41,6 +41,12 @@ extension NSObject {
             cellCount = cellModel.rowCount
         
         case .showAllData:
+            cellCount = cellModel.rowCount
+            
+        case .sleepAnalysis:
+            cellCount = cellModel.rowCount
+            
+        case .soundLevel:
             cellCount = cellModel.rowCount
         }
         
@@ -78,6 +84,9 @@ extension NSObject {
                 cell.showFullDataHandler = showFullDataHandler
                 cellClass = cell
             }
+            
+        default:
+            break   
         
         }
         

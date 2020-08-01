@@ -50,6 +50,19 @@ class HealthDataViewModel: NSObject {
             cellModels.append(stepsModel)
             
         }
+        
+        if let soundLevels = cellMod.soundLevels {
+            let soundL = EnvironmentCellModel(soundLevels: soundLevels)// StepsCellModel(steps: activeEnergy)
+            cellModels.append(soundL)
+            
+        }
+        
+        if let sleepHours = cellMod.sleepHours {
+            let sleepHr = SleepAnalysisCellModel(sleepHours: sleepHours)
+            cellModels.append(sleepHr)
+            
+        }
+        
   
     }
     
@@ -82,6 +95,18 @@ class HealthDataViewModel: NSObject {
             
         case .showAllData:
             if let cell = tableView.dequeueReusableCell(withIdentifier: ShowHealthTableViewCell.identifier, for: indexPath) as? ShowHealthTableViewCell {
+                cellClass = cell
+            }
+            
+        case .sleepAnalysis:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: SleepAnalysisTableViewCell.identifier, for: indexPath) as? SleepAnalysisTableViewCell {
+                cell.cellModel = cellModel
+                cellClass = cell
+            }
+        
+        case .soundLevel:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: SoundLevelCheckingTableViewCell.identifier, for: indexPath) as? SoundLevelCheckingTableViewCell {
+                 cell.cellModel = cellModel
                 cellClass = cell
             }
         

@@ -16,6 +16,29 @@ class SoundLevelCheckingTableViewCell: UITableViewCell {
     @IBOutlet weak var soundOkLB: UILabel!
     @IBOutlet weak var exposureLB: UILabel!
     
+    var currentSoundLevel: Int = 0
+    
+    var cellModel: CellConfigModel? {
+       didSet {
+           guard let cellMod = cellModel as? EnvironmentCellModel else {return}
+            let soundLevels = cellMod.soundLevels
+           callImage(urlStr: soundLevels.icon ?? "", imgView: iconImgView)
+            soundLevelTitleLB.text = soundLevels.name ?? "-"
+        
+        if let sLevel = soundLevels.value {
+            
+            if currentSoundLevel < sLevel {
+                 callImage(urlStr: soundLevels.iconOK ?? "", imgView: soundCheckImgView)
+            } else {
+                 callImage(urlStr: soundLevels.iconError ?? "", imgView: soundCheckImgView)
+            }
+            
+        }
+            
+        
+       }
+    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

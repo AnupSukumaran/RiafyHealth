@@ -20,6 +20,18 @@ class SleepAnalysisTableViewCell: UITableViewCell {
     @IBOutlet weak var minLB: UILabel!
     @IBOutlet weak var minTitleLB: UILabel!
     
+    var cellModel: CellConfigModel? {
+       didSet {
+           guard let cellMod = cellModel as? SleepAnalysisCellModel else {return}
+            let sleepHours = cellMod.sleepHours
+           callImage(urlStr: sleepHours.icon ?? "", imgView: iconImgView)
+            mainTitleLB.text = sleepHours.name ?? "-"
+            hrLB.text = String(sleepHours.hour ?? 0)
+            minLB.text = String(sleepHours.minutes ?? 0)
+        
+       }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

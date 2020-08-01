@@ -54,6 +54,8 @@
 		18BE8EAD24D5F1090094B00A /* search.html in Resources */ = {isa = PBXBuildFile; fileRef = 18BE8EAC24D5F1090094B00A /* search.html */; };
 		18BE8EAF24D602AE0094B00A /* SleepAnalysisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8EAE24D602AE0094B00A /* SleepAnalysisTableViewCell.swift */; };
 		18BE8EB124D606F90094B00A /* SoundLevelCheckingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8EB024D606F90094B00A /* SoundLevelCheckingTableViewCell.swift */; };
+		18BE8EB324D608E80094B00A /* EnvironmentCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8EB224D608E80094B00A /* EnvironmentCellModel.swift */; };
+		18BE8EB524D609530094B00A /* SleepAnalysisCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8EB424D609530094B00A /* SleepAnalysisCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +106,8 @@
 		18BE8EAC24D5F1090094B00A /* search.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = search.html; sourceTree = "<group>"; };
 		18BE8EAE24D602AE0094B00A /* SleepAnalysisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAnalysisTableViewCell.swift; sourceTree = "<group>"; };
 		18BE8EB024D606F90094B00A /* SoundLevelCheckingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLevelCheckingTableViewCell.swift; sourceTree = "<group>"; };
+		18BE8EB224D608E80094B00A /* EnvironmentCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentCellModel.swift; sourceTree = "<group>"; };
+		18BE8EB424D609530094B00A /* SleepAnalysisCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAnalysisCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +251,8 @@
 				18BE8E8624D5B6790094B00A /* StepsCellModel.swift */,
 				18BE8E8824D5B7100094B00A /* ArticlesCellModel.swift */,
 				18BE8E9B24D5D6EA0094B00A /* ShowFullDataCellModel.swift */,
+				18BE8EB224D608E80094B00A /* EnvironmentCellModel.swift */,
+				18BE8EB424D609530094B00A /* SleepAnalysisCellModel.swift */,
 			);
 			path = CellModels;
 			sourceTree = "<group>";
@@ -386,9 +392,11 @@
 				18BE8E7124D591FD0094B00A /* Results.swift in Sources */,
 				18BE8E9824D5C2020094B00A /* ShowHealthTableViewCell.swift in Sources */,
 				18BE8E9124D5C12A0094B00A /* StepsTableViewCell.swift in Sources */,
+				18BE8EB524D609530094B00A /* SleepAnalysisCellModel.swift in Sources */,
 				18BE8E5B24D58F820094B00A /* Items.swift in Sources */,
 				18BE8E5E24D58F820094B00A /* Articles.swift in Sources */,
 				18BE8E3724D588690094B00A /* AppDelegate.swift in Sources */,
+				18BE8EB324D608E80094B00A /* EnvironmentCellModel.swift in Sources */,
 				18BE8E5C24D58F820094B00A /* Activity.swift in Sources */,
 				18BE8E3924D588690094B00A /* SceneDelegate.swift in Sources */,
 				18BE8E7A24D59B480094B00A /* HealthDataViewModel.swift in Sources */,
