@@ -451,6 +451,7 @@
                                                         <constraint firstItem="TJ7-KT-Y8L" firstAttribute="centerY" secondItem="O41-Ry-BeP" secondAttribute="centerY" id="G6a-YP-qA9"/>
                                                         <constraint firstItem="Bjh-kW-vKc" firstAttribute="leading" secondItem="O41-Ry-BeP" secondAttribute="leading" id="L9m-2h-7e5"/>
                                                         <constraint firstItem="Bjh-kW-vKc" firstAttribute="top" secondItem="O41-Ry-BeP" secondAttribute="top" id="PXF-6f-NqA"/>
+                                                        <constraint firstAttribute="height" constant="41" id="WIA-Vl-Ptc"/>
                                                         <constraint firstAttribute="bottom" secondItem="Bjh-kW-vKc" secondAttribute="bottom" id="ekz-el-7SA"/>
                                                         <constraint firstAttribute="trailing" secondItem="TJ7-KT-Y8L" secondAttribute="trailing" constant="12" id="lsh-7y-J5E"/>
                                                     </constraints>

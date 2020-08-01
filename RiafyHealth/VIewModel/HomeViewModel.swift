@@ -14,6 +14,7 @@ class HomeViewModel: NSObject {
     var homeData: HomeModel?
     
     var tableReloadHandler: (() -> ())? = nil
+    var showFullDataHandler: (() -> ())? = nil
     
     override init() {
         super.init()
@@ -47,7 +48,10 @@ class HomeViewModel: NSObject {
         if let steps = cellMod.steps {
             let stepsModel = StepsCellModel(steps: steps)
             cellModels.append(stepsModel)
+            
         }
+        
+        cellModels.append(ShowFullDataCellModel())
         
         if let articles = cellMod.articles {
             let articlesModel = ArticlesCellModel(articles: articles)
@@ -73,6 +77,8 @@ class HomeViewModel: NSObject {
         case .articles:
             cellCount = cellModel.rowCount
         
+        case .showAllData:
+            cellCount = 1
         }
         
         return cellCount
@@ -103,6 +109,12 @@ class HomeViewModel: NSObject {
                 cell.cellModel = cellModel
                 cellClass = cell
             }
+            
+        case .showAllData:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: ShowHealthTableViewCell.identifier, for: indexPath) as? ShowHealthTableViewCell {
+                cell.showFullDataHandler = showFullDataHandler
+                cellClass = cell
+            }
         
         }
         
@@ -113,7 +125,7 @@ class HomeViewModel: NSObject {
     func returnSectionHeight(_ section: Int)  -> CGFloat {
         if section == 0 {
            return 54
-        } else if section == 2 {
+        } else if section == 3 {
            return 54
         } else {
            return 0
@@ -128,7 +140,7 @@ class HomeViewModel: NSObject {
             }
         }
         
-        if section == 2 {
+        if section == 3 {
             if let cell = tableView.dequeueReusableCell(withIdentifier: SectionType1TableViewCell.identifier) as? SectionType1TableViewCell {
                 return cell.contentView
             }

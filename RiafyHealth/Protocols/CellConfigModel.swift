@@ -12,6 +12,7 @@ enum CellType {
     case activity
     case steps
     case articles
+    case showAllData
 }
 
 protocol CellConfigModel {

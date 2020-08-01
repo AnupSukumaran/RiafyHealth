@@ -35,6 +35,10 @@ class FirstViewController: UIViewController {
             guard let vc = self else {return}
             vc.homeListView.reloadData()
         }
+        
+        homeViewModel.showFullDataHandler = { [weak self] in
+            guard let vc = self else {return}
+        }
     }
 
 

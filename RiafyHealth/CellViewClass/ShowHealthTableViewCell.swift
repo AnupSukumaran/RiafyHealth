@@ -11,10 +11,11 @@ import UIKit
 class ShowHealthTableViewCell: UITableViewCell {
     
     @IBOutlet weak var showAllHealtBtn: UIButton!
-    
+        
+    var showFullDataHandler: (() -> ())? = nil
 
     @IBAction func showAllHealthDataBtn(_ sender: UIButton) {
-        
+        showFullDataHandler?()
     }
     
 

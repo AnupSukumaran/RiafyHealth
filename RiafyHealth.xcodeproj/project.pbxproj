@@ -47,6 +47,7 @@
 		18BE8E9624D5C1EA0094B00A /* SectionType1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E9524D5C1EA0094B00A /* SectionType1TableViewCell.swift */; };
 		18BE8E9824D5C2020094B00A /* ShowHealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E9724D5C2020094B00A /* ShowHealthTableViewCell.swift */; };
 		18BE8E9A24D5D2D90094B00A /* SectionType2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E9924D5D2D90094B00A /* SectionType2TableViewCell.swift */; };
+		18BE8E9C24D5D6EA0094B00A /* ShowFullDataCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E9B24D5D6EA0094B00A /* ShowFullDataCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		18BE8E9524D5C1EA0094B00A /* SectionType1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType1TableViewCell.swift; sourceTree = "<group>"; };
 		18BE8E9724D5C2020094B00A /* ShowHealthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHealthTableViewCell.swift; sourceTree = "<group>"; };
 		18BE8E9924D5D2D90094B00A /* SectionType2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType2TableViewCell.swift; sourceTree = "<group>"; };
+		18BE8E9B24D5D6EA0094B00A /* ShowFullDataCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFullDataCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 				18BE8E8424D5B56B0094B00A /* ActivityCellModel.swift */,
 				18BE8E8624D5B6790094B00A /* StepsCellModel.swift */,
 				18BE8E8824D5B7100094B00A /* ArticlesCellModel.swift */,
+				18BE8E9B24D5D6EA0094B00A /* ShowFullDataCellModel.swift */,
 			);
 			path = CellModels;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				18BE8E8524D5B56B0094B00A /* ActivityCellModel.swift in Sources */,
 				18BE8E7F24D59FE40094B00A /* UIViewCustom.swift in Sources */,
 				18BE8E9624D5C1EA0094B00A /* SectionType1TableViewCell.swift in Sources */,
+				18BE8E9C24D5D6EA0094B00A /* ShowFullDataCellModel.swift in Sources */,
 				18BE8E6624D590700094B00A /* ActiveEnergy.swift in Sources */,
 				18BE8E7E24D59FE10094B00A /* UIButtonCustom.swift in Sources */,
 				18BE8E9324D5C1380094B00A /* ArticleTableViewCell.swift in Sources */,
