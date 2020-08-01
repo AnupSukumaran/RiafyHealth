@@ -14,7 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if let tabBar = window?.rootViewController as? UITabBarController {
+            if let nav = tabBar.viewControllers?.first as? UINavigationController {
+                let vc = nav.topViewController as! FirstViewController
+                vc.homeViewModel = HomeViewModel()
+            }
+        }
+        
         return true
     }
 

@@ -10,8 +10,11 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    var homeViewModel: HomeViewModel! 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
 
