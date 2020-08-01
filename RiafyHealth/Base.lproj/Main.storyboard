@@ -64,7 +64,29 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oa4-fn-qTQ">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="401"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuu-gW-ny9">
+                                                            <rect key="frame" x="186" y="8" width="42" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PY2-JF-LLG">
+                                                            <rect key="frame" x="186" y="372.5" width="42" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="PY2-JF-LLG" secondAttribute="bottom" constant="8" id="6N2-Oy-fsZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="PY2-JF-LLG" secondAttribute="trailing" constant="186" id="9bg-s7-cLc"/>
+                                                        <constraint firstItem="vuu-gW-ny9" firstAttribute="leading" secondItem="Oa4-fn-qTQ" secondAttribute="leading" constant="186" id="Tku-45-1AS"/>
+                                                        <constraint firstAttribute="trailing" secondItem="vuu-gW-ny9" secondAttribute="trailing" constant="186" id="rtV-gq-IAh"/>
+                                                        <constraint firstItem="vuu-gW-ny9" firstAttribute="top" secondItem="Oa4-fn-qTQ" secondAttribute="top" constant="8" id="tbk-lE-nwW"/>
+                                                        <constraint firstItem="PY2-JF-LLG" firstAttribute="leading" secondItem="Oa4-fn-qTQ" secondAttribute="leading" constant="186" id="zVk-if-Sbh"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

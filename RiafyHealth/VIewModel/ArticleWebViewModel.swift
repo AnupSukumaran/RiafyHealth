@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 class ArticleWebViewModel: NSObject {
 
@@ -28,6 +29,8 @@ extension ArticleWebViewModel: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: ArticleWebViewTableViewCell.identifier, for: indexPath) as? ArticleWebViewTableViewCell {
+    
+            cell.config()
             return cell
         }
         return UITableViewCell()
@@ -35,3 +38,5 @@ extension ArticleWebViewModel: UITableViewDataSource, UITableViewDelegate {
     
     
 }
+
+
