@@ -45,7 +45,7 @@
         <!--Summary-->
         <scene sceneID="Wio-IL-MEL">
             <objects>
-                <viewController id="p9l-OK-hSb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" id="p9l-OK-hSb" customClass="FirstViewController" customModule="RiafyHealth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="duL-cK-ylI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -9,22 +9,46 @@
 /* Begin PBXBuildFile section */
 		18BE8E3724D588690094B00A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E3624D588690094B00A /* AppDelegate.swift */; };
 		18BE8E3924D588690094B00A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E3824D588690094B00A /* SceneDelegate.swift */; };
-		18BE8E3B24D588690094B00A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E3A24D588690094B00A /* ViewController.swift */; };
+		18BE8E3B24D588690094B00A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E3A24D588690094B00A /* FirstViewController.swift */; };
 		18BE8E3E24D588690094B00A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BE8E3C24D588690094B00A /* Main.storyboard */; };
 		18BE8E4024D588700094B00A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BE8E3F24D588700094B00A /* Assets.xcassets */; };
 		18BE8E4324D588700094B00A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BE8E4124D588700094B00A /* LaunchScreen.storyboard */; };
 		18BE8E4C24D588E00094B00A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 18BE8E4B24D588E00094B00A /* Alamofire */; };
+		18BE8E4F24D58C4E0094B00A /* NSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E4E24D58C4E0094B00A /* NSObject+Ext.swift */; };
+		18BE8E5224D58DF20094B00A /* APILib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E5124D58DF20094B00A /* APILib.swift */; };
+		18BE8E5A24D58F820094B00A /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E5524D58F810094B00A /* HomeModel.swift */; };
+		18BE8E5B24D58F820094B00A /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E5624D58F810094B00A /* Items.swift */; };
+		18BE8E5C24D58F820094B00A /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E5724D58F820094B00A /* Activity.swift */; };
+		18BE8E5D24D58F820094B00A /* Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E5824D58F820094B00A /* Steps.swift */; };
+		18BE8E5E24D58F820094B00A /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E5924D58F820094B00A /* Articles.swift */; };
+		18BE8E6524D590700094B00A /* SleepHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E6024D5906F0094B00A /* SleepHours.swift */; };
+		18BE8E6624D590700094B00A /* ActiveEnergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E6124D5906F0094B00A /* ActiveEnergy.swift */; };
+		18BE8E6724D590700094B00A /* HealthDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E6224D5906F0094B00A /* HealthDataModel.swift */; };
+		18BE8E6824D590700094B00A /* SoundLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E6324D590700094B00A /* SoundLevels.swift */; };
+		18BE8E6924D590700094B00A /* StandHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E6424D590700094B00A /* StandHours.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18BE8E3324D588690094B00A /* RiafyHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiafyHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BE8E3624D588690094B00A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18BE8E3824D588690094B00A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18BE8E3A24D588690094B00A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18BE8E3A24D588690094B00A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		18BE8E3D24D588690094B00A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18BE8E3F24D588700094B00A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18BE8E4224D588700094B00A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18BE8E4424D588700094B00A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BE8E4E24D58C4E0094B00A /* NSObject+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Ext.swift"; sourceTree = "<group>"; };
+		18BE8E5124D58DF20094B00A /* APILib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILib.swift; sourceTree = "<group>"; };
+		18BE8E5524D58F810094B00A /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		18BE8E5624D58F810094B00A /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		18BE8E5724D58F820094B00A /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		18BE8E5824D58F820094B00A /* Steps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Steps.swift; sourceTree = "<group>"; };
+		18BE8E5924D58F820094B00A /* Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		18BE8E6024D5906F0094B00A /* SleepHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepHours.swift; sourceTree = "<group>"; };
+		18BE8E6124D5906F0094B00A /* ActiveEnergy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveEnergy.swift; sourceTree = "<group>"; };
+		18BE8E6224D5906F0094B00A /* HealthDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthDataModel.swift; sourceTree = "<group>"; };
+		18BE8E6324D590700094B00A /* SoundLevels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundLevels.swift; sourceTree = "<group>"; };
+		18BE8E6424D590700094B00A /* StandHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandHours.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +82,67 @@
 		18BE8E3524D588690094B00A /* RiafyHealth */ = {
 			isa = PBXGroup;
 			children = (
+				18BE8E5324D58E360094B00A /* Models */,
+				18BE8E5024D58D990094B00A /* NetworkModule */,
+				18BE8E4D24D58C370094B00A /* Exts */,
 				18BE8E3624D588690094B00A /* AppDelegate.swift */,
 				18BE8E3824D588690094B00A /* SceneDelegate.swift */,
-				18BE8E3A24D588690094B00A /* ViewController.swift */,
+				18BE8E3A24D588690094B00A /* FirstViewController.swift */,
 				18BE8E3C24D588690094B00A /* Main.storyboard */,
 				18BE8E3F24D588700094B00A /* Assets.xcassets */,
 				18BE8E4124D588700094B00A /* LaunchScreen.storyboard */,
 				18BE8E4424D588700094B00A /* Info.plist */,
 			);
 			path = RiafyHealth;
+			sourceTree = "<group>";
+		};
+		18BE8E4D24D58C370094B00A /* Exts */ = {
+			isa = PBXGroup;
+			children = (
+				18BE8E4E24D58C4E0094B00A /* NSObject+Ext.swift */,
+			);
+			path = Exts;
+			sourceTree = "<group>";
+		};
+		18BE8E5024D58D990094B00A /* NetworkModule */ = {
+			isa = PBXGroup;
+			children = (
+				18BE8E5124D58DF20094B00A /* APILib.swift */,
+			);
+			path = NetworkModule;
+			sourceTree = "<group>";
+		};
+		18BE8E5324D58E360094B00A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18BE8E5F24D58FC00094B00A /* HealthDataModel */,
+				18BE8E5424D58F660094B00A /* HomeModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18BE8E5424D58F660094B00A /* HomeModel */ = {
+			isa = PBXGroup;
+			children = (
+				18BE8E5724D58F820094B00A /* Activity.swift */,
+				18BE8E5924D58F820094B00A /* Articles.swift */,
+				18BE8E5524D58F810094B00A /* HomeModel.swift */,
+				18BE8E5624D58F810094B00A /* Items.swift */,
+				18BE8E5824D58F820094B00A /* Steps.swift */,
+			);
+			path = HomeModel;
+			sourceTree = "<group>";
+		};
+		18BE8E5F24D58FC00094B00A /* HealthDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				18BE8E6124D5906F0094B00A /* ActiveEnergy.swift */,
+				18BE8E6224D5906F0094B00A /* HealthDataModel.swift */,
+				18BE8E6024D5906F0094B00A /* SleepHours.swift */,
+				18BE8E6324D590700094B00A /* SoundLevels.swift */,
+				18BE8E6424D590700094B00A /* StandHours.swift */,
+			);
+			path = HealthDataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +222,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18BE8E3B24D588690094B00A /* ViewController.swift in Sources */,
+				18BE8E5D24D58F820094B00A /* Steps.swift in Sources */,
+				18BE8E3B24D588690094B00A /* FirstViewController.swift in Sources */,
+				18BE8E4F24D58C4E0094B00A /* NSObject+Ext.swift in Sources */,
+				18BE8E5A24D58F820094B00A /* HomeModel.swift in Sources */,
+				18BE8E5224D58DF20094B00A /* APILib.swift in Sources */,
+				18BE8E5B24D58F820094B00A /* Items.swift in Sources */,
+				18BE8E5E24D58F820094B00A /* Articles.swift in Sources */,
 				18BE8E3724D588690094B00A /* AppDelegate.swift in Sources */,
+				18BE8E5C24D58F820094B00A /* Activity.swift in Sources */,
 				18BE8E3924D588690094B00A /* SceneDelegate.swift in Sources */,
+				18BE8E6824D590700094B00A /* SoundLevels.swift in Sources */,
+				18BE8E6524D590700094B00A /* SleepHours.swift in Sources */,
+				18BE8E6724D590700094B00A /* HealthDataModel.swift in Sources */,
+				18BE8E6624D590700094B00A /* ActiveEnergy.swift in Sources */,
+				18BE8E6924D590700094B00A /* StandHours.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
