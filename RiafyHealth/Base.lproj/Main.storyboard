@@ -50,7 +50,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ssq-5b-2h6">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ssq-5b-2h6">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -395,6 +395,103 @@
                                                 <constraint firstAttribute="bottom" secondItem="O41-Ry-BeP" secondAttribute="bottom" constant="1" id="Hpg-sQ-z1M"/>
                                                 <constraint firstAttribute="trailing" secondItem="O41-Ry-BeP" secondAttribute="trailing" constant="15" id="TpZ-ya-8mS"/>
                                                 <constraint firstItem="O41-Ry-BeP" firstAttribute="leading" secondItem="jmJ-Vj-fR5" secondAttribute="leading" constant="15" id="oMN-74-LqL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="54" id="UPB-OW-iNo">
+                                        <rect key="frame" x="0.0" y="337" width="414" height="54"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UPB-OW-iNo" id="gTy-Vk-Zua">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get More From Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvO-gp-o1E">
+                                                    <rect key="frame" x="15" y="30" width="384" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="rvO-gp-o1E" secondAttribute="bottom" id="2Sq-jR-oVr"/>
+                                                <constraint firstAttribute="trailing" secondItem="rvO-gp-o1E" secondAttribute="trailing" constant="15" id="jm6-wX-RlP"/>
+                                                <constraint firstItem="rvO-gp-o1E" firstAttribute="leading" secondItem="gTy-Vk-Zua" secondAttribute="leading" constant="15" id="ken-PG-XPx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="303" id="MJ3-pM-nof">
+                                        <rect key="frame" x="0.0" y="391" width="414" height="303"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MJ3-pM-nof" id="7EP-zG-kTN">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MT-TR-DcJ" customClass="UIViewCustom" customModule="RiafyHealth" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="12" width="384" height="290"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="nqN-PD-pQK">
+                                                            <rect key="frame" x="0.0" y="0.0" width="384" height="274"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cgp-8U-IKX">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="195"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yq2-zT-W0w">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="384" height="195"/>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="yq2-zT-W0w" firstAttribute="top" secondItem="Cgp-8U-IKX" secondAttribute="top" id="ImN-9j-u7P"/>
+                                                                        <constraint firstAttribute="height" constant="195" id="ULF-KI-13r"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="yq2-zT-W0w" secondAttribute="bottom" id="bFM-kN-18a"/>
+                                                                        <constraint firstItem="yq2-zT-W0w" firstAttribute="leading" secondItem="Cgp-8U-IKX" secondAttribute="leading" id="dcb-rc-egj"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="yq2-zT-W0w" secondAttribute="trailing" id="df8-Qa-I6i"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="GSs-5Z-vln">
+                                                                    <rect key="frame" x="21" y="202" width="342" height="72"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you get enough vitamin D?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2o-ww-j8u">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="342" height="24"/>
+                                                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn about the impact of Vitamin D on your Body." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fG-Oe-vwD">
+                                                                            <rect key="frame" x="0.0" y="31" width="342" height="41"/>
+                                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="nqN-PD-pQK" firstAttribute="top" secondItem="2MT-TR-DcJ" secondAttribute="top" id="Hj2-Ll-fLX"/>
+                                                        <constraint firstAttribute="trailing" secondItem="nqN-PD-pQK" secondAttribute="trailing" id="L8F-3N-PsZ"/>
+                                                        <constraint firstItem="GSs-5Z-vln" firstAttribute="width" secondItem="2MT-TR-DcJ" secondAttribute="width" multiplier="0.890365" id="OoV-Yv-Clv"/>
+                                                        <constraint firstItem="nqN-PD-pQK" firstAttribute="leading" secondItem="2MT-TR-DcJ" secondAttribute="leading" id="Yfr-e9-TNN"/>
+                                                        <constraint firstAttribute="bottom" secondItem="nqN-PD-pQK" secondAttribute="bottom" constant="16" id="beY-KP-VyU"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="2MT-TR-DcJ" firstAttribute="leading" secondItem="7EP-zG-kTN" secondAttribute="leading" constant="15" id="1gJ-CV-VPQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="2MT-TR-DcJ" secondAttribute="bottom" constant="1" id="8OC-x9-5Pe"/>
+                                                <constraint firstItem="2MT-TR-DcJ" firstAttribute="top" secondItem="7EP-zG-kTN" secondAttribute="top" constant="12" id="VBP-6v-Rkd"/>
+                                                <constraint firstAttribute="trailing" secondItem="2MT-TR-DcJ" secondAttribute="trailing" constant="15" id="Yau-2A-pUy"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
