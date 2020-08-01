@@ -12,7 +12,7 @@ class FirstViewController: UIViewController {
 
     @IBOutlet weak var homeListView: UITableView!
     
-    @IBOutlet weak var doneBtn: UIButton!
+  
     
     var articleWebViewModel: ArticleWebViewModel!
     
@@ -40,7 +40,7 @@ class FirstViewController: UIViewController {
             homeListView.delegate = healthData
             homeListView.dataSource = healthData
             homeListView.estimatedRowHeight = 100
-            doneBtn.isHidden = true
+            
             navigationItem.title = "All Health Data"
     
         }
@@ -84,9 +84,7 @@ class FirstViewController: UIViewController {
     }
     
     
-    @IBAction func doneAction(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-    }
+    
     
 
 }
