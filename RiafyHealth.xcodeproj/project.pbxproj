@@ -48,6 +48,10 @@
 		18BE8E9824D5C2020094B00A /* ShowHealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E9724D5C2020094B00A /* ShowHealthTableViewCell.swift */; };
 		18BE8E9A24D5D2D90094B00A /* SectionType2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E9924D5D2D90094B00A /* SectionType2TableViewCell.swift */; };
 		18BE8E9C24D5D6EA0094B00A /* ShowFullDataCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E9B24D5D6EA0094B00A /* ShowFullDataCellModel.swift */; };
+		18BE8E9E24D5DB280094B00A /* ArticleWebViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E9D24D5DB280094B00A /* ArticleWebViewTableViewCell.swift */; };
+		18BE8EA024D5DC4A0094B00A /* ArticleWebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E9F24D5DC4A0094B00A /* ArticleWebViewModel.swift */; };
+		18BE8EA224D5DDC50094B00A /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8EA124D5DDC50094B00A /* UIStoryboard+Ext.swift */; };
+		18BE8EA424D5DDD60094B00A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8EA324D5DDD60094B00A /* UIViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +96,10 @@
 		18BE8E9724D5C2020094B00A /* ShowHealthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHealthTableViewCell.swift; sourceTree = "<group>"; };
 		18BE8E9924D5D2D90094B00A /* SectionType2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType2TableViewCell.swift; sourceTree = "<group>"; };
 		18BE8E9B24D5D6EA0094B00A /* ShowFullDataCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFullDataCellModel.swift; sourceTree = "<group>"; };
+		18BE8E9D24D5DB280094B00A /* ArticleWebViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleWebViewTableViewCell.swift; sourceTree = "<group>"; };
+		18BE8E9F24D5DC4A0094B00A /* ArticleWebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleWebViewModel.swift; sourceTree = "<group>"; };
+		18BE8EA124D5DDC50094B00A /* UIStoryboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Ext.swift"; sourceTree = "<group>"; };
+		18BE8EA324D5DDD60094B00A /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +158,8 @@
 			children = (
 				18BE8E4E24D58C4E0094B00A /* NSObject+Ext.swift */,
 				18BE8E6E24D5916D0094B00A /* String+Ext.swift */,
+				18BE8EA124D5DDC50094B00A /* UIStoryboard+Ext.swift */,
+				18BE8EA324D5DDD60094B00A /* UIViewController+Ext.swift */,
 			);
 			path = Exts;
 			sourceTree = "<group>";
@@ -205,6 +215,7 @@
 			children = (
 				18BE8E7524D595CB0094B00A /* HomeViewModel.swift */,
 				18BE8E7924D59B480094B00A /* HealthDataViewModel.swift */,
+				18BE8E9F24D5DC4A0094B00A /* ArticleWebViewModel.swift */,
 			);
 			path = VIewModel;
 			sourceTree = "<group>";
@@ -245,6 +256,7 @@
 				18BE8E9024D5C12A0094B00A /* StepsTableViewCell.swift */,
 				18BE8E9224D5C1380094B00A /* ArticleTableViewCell.swift */,
 				18BE8E9724D5C2020094B00A /* ShowHealthTableViewCell.swift */,
+				18BE8E9D24D5DB280094B00A /* ArticleWebViewTableViewCell.swift */,
 			);
 			path = CellViewClass;
 			sourceTree = "<group>";
@@ -356,8 +368,10 @@
 				18BE8E5C24D58F820094B00A /* Activity.swift in Sources */,
 				18BE8E3924D588690094B00A /* SceneDelegate.swift in Sources */,
 				18BE8E7A24D59B480094B00A /* HealthDataViewModel.swift in Sources */,
+				18BE8E9E24D5DB280094B00A /* ArticleWebViewTableViewCell.swift in Sources */,
 				18BE8E6B24D590F70094B00A /* APILibrary.swift in Sources */,
 				18BE8E6824D590700094B00A /* SoundLevels.swift in Sources */,
+				18BE8EA424D5DDD60094B00A /* UIViewController+Ext.swift in Sources */,
 				18BE8E8924D5B7100094B00A /* ArticlesCellModel.swift in Sources */,
 				18BE8E6524D590700094B00A /* SleepHours.swift in Sources */,
 				18BE8E8224D5B4B60094B00A /* CellConfigModel.swift in Sources */,
@@ -368,6 +382,8 @@
 				18BE8E9624D5C1EA0094B00A /* SectionType1TableViewCell.swift in Sources */,
 				18BE8E9C24D5D6EA0094B00A /* ShowFullDataCellModel.swift in Sources */,
 				18BE8E6624D590700094B00A /* ActiveEnergy.swift in Sources */,
+				18BE8EA224D5DDC50094B00A /* UIStoryboard+Ext.swift in Sources */,
+				18BE8EA024D5DC4A0094B00A /* ArticleWebViewModel.swift in Sources */,
 				18BE8E7E24D59FE10094B00A /* UIButtonCustom.swift in Sources */,
 				18BE8E9324D5C1380094B00A /* ArticleTableViewCell.swift in Sources */,
 				18BE8E6924D590700094B00A /* StandHours.swift in Sources */,

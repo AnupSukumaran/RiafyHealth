@@ -15,6 +15,7 @@ class HomeViewModel: NSObject {
     
     var tableReloadHandler: (() -> ())? = nil
     var showFullDataHandler: (() -> ())? = nil
+    var selectedTheArticleHandler: (() -> ())? = nil
     
     override init() {
         super.init()
@@ -149,6 +150,15 @@ class HomeViewModel: NSObject {
         
         return UIView()
     }
+    
+    func selectTheArticleIndexOnly(cellModel: CellConfigModel) {
+        
+        if cellModel.celltype == .articles {
+            selectedTheArticleHandler?()
+        }
+        
+    }
+
 
 }
 
@@ -175,6 +185,10 @@ extension HomeViewModel: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return returnSectionHeight( section)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectTheArticleIndexOnly(cellModel: cellModels[indexPath.section])
     }
     
     
