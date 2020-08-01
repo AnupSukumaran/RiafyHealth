@@ -22,6 +22,12 @@ class APILibrary: NSObject {
         dataSetter(req, comp: comp)
     }
     
+    public func apiGetHealthDataAPI(comp: @escaping (Results<ModelResponse>) -> ()) {
+        let params: OJSON = [.type: "all"]
+        let req = APILib.makeRequest(method: .get, params: params, apiComponents: apiComponent)
+        dataSetter(req, comp: comp)
+    }
+    
     
     public func dataSetter( _ req: URLRequest, comp: @escaping (Results<ModelResponse>) -> ()) {
         

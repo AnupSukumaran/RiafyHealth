@@ -33,6 +33,7 @@
 		18BE8E7324D592340094B00A /* ModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E7224D592330094B00A /* ModelResponse.swift */; };
 		18BE8E7624D595CB0094B00A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E7524D595CB0094B00A /* HomeViewModel.swift */; };
 		18BE8E7824D598A70094B00A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E7724D598A70094B00A /* SecondViewController.swift */; };
+		18BE8E7A24D59B480094B00A /* HealthDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E7924D59B480094B00A /* HealthDataViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		18BE8E7224D592330094B00A /* ModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelResponse.swift; sourceTree = "<group>"; };
 		18BE8E7524D595CB0094B00A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		18BE8E7724D598A70094B00A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		18BE8E7924D59B480094B00A /* HealthDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				18BE8E7524D595CB0094B00A /* HomeViewModel.swift */,
+				18BE8E7924D59B480094B00A /* HealthDataViewModel.swift */,
 			);
 			path = VIewModel;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				18BE8E3724D588690094B00A /* AppDelegate.swift in Sources */,
 				18BE8E5C24D58F820094B00A /* Activity.swift in Sources */,
 				18BE8E3924D588690094B00A /* SceneDelegate.swift in Sources */,
+				18BE8E7A24D59B480094B00A /* HealthDataViewModel.swift in Sources */,
 				18BE8E6B24D590F70094B00A /* APILibrary.swift in Sources */,
 				18BE8E6824D590700094B00A /* SoundLevels.swift in Sources */,
 				18BE8E6524D590700094B00A /* SleepHours.swift in Sources */,
