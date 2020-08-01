@@ -129,5 +129,34 @@ extension HomeViewModel: UITableViewDelegate, UITableViewDataSource {
         return cellTypeBasedOnCellModel(tableView, cellForRowAt: indexPath, cellModel: cellModels[indexPath.section])
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 0 {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: SectionType2TableViewCell.identifier) as? SectionType2TableViewCell {
+                return cell.contentView
+            }
+        }
+        
+        if section == 2 {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: SectionType1TableViewCell.identifier) as? SectionType1TableViewCell {
+                return cell.contentView
+            }
+        }
+        
+        
+        return UIView()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 54
+        } else if section == 2 {
+            return 54
+        } else {
+            return 0
+        }
+        
+        
+    }
+    
     
 }

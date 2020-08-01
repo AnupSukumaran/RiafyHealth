@@ -46,6 +46,7 @@
 		18BE8E9324D5C1380094B00A /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E9224D5C1380094B00A /* ArticleTableViewCell.swift */; };
 		18BE8E9624D5C1EA0094B00A /* SectionType1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E9524D5C1EA0094B00A /* SectionType1TableViewCell.swift */; };
 		18BE8E9824D5C2020094B00A /* ShowHealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E9724D5C2020094B00A /* ShowHealthTableViewCell.swift */; };
+		18BE8E9A24D5D2D90094B00A /* SectionType2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E9924D5D2D90094B00A /* SectionType2TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		18BE8E9224D5C1380094B00A /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		18BE8E9524D5C1EA0094B00A /* SectionType1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType1TableViewCell.swift; sourceTree = "<group>"; };
 		18BE8E9724D5C2020094B00A /* ShowHealthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHealthTableViewCell.swift; sourceTree = "<group>"; };
+		18BE8E9924D5D2D90094B00A /* SectionType2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType2TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				18BE8E9524D5C1EA0094B00A /* SectionType1TableViewCell.swift */,
+				18BE8E9924D5D2D90094B00A /* SectionType2TableViewCell.swift */,
 			);
 			path = SectionCells;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				18BE8E3B24D588690094B00A /* FirstViewController.swift in Sources */,
 				18BE8E4F24D58C4E0094B00A /* NSObject+Ext.swift in Sources */,
 				18BE8E5A24D58F820094B00A /* HomeModel.swift in Sources */,
+				18BE8E9A24D5D2D90094B00A /* SectionType2TableViewCell.swift in Sources */,
 				18BE8E5224D58DF20094B00A /* APILib.swift in Sources */,
 				18BE8E7124D591FD0094B00A /* Results.swift in Sources */,
 				18BE8E9824D5C2020094B00A /* ShowHealthTableViewCell.swift in Sources */,

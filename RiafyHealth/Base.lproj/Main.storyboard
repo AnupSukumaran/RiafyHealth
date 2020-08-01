@@ -55,8 +55,34 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SectionType2TableViewCell" rowHeight="54" id="pda-BP-Yyb" customClass="SectionType2TableViewCell" customModule="RiafyHealth" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="54"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pda-BP-Yyb" id="Ggk-lR-BSo">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favourites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ye8-pF-SMk">
+                                                    <rect key="frame" x="15" y="25" width="384" height="29"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Ye8-pF-SMk" firstAttribute="leading" secondItem="Ggk-lR-BSo" secondAttribute="leading" constant="15" id="6Ba-TD-dp3"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ye8-pF-SMk" secondAttribute="trailing" constant="15" id="80y-UC-acU"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ye8-pF-SMk" secondAttribute="bottom" id="s9r-QD-ULj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="sectionTitle" destination="Ye8-pF-SMk" id="QhM-Su-J6I"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityTableViewCell" rowHeight="135" id="jDr-qd-b3f" customClass="ActivityTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="135"/>
+                                        <rect key="frame" x="0.0" y="82" width="414" height="135"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jDr-qd-b3f" id="ufR-EH-7h1">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
@@ -294,7 +320,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StepsTableViewCell" rowHeight="120" id="Izy-C0-EHV" customClass="StepsTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="163" width="414" height="120"/>
+                                        <rect key="frame" x="0.0" y="217" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Izy-C0-EHV" id="aFb-eS-2Di">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
@@ -392,7 +418,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowHealthTableViewCell" rowHeight="54" id="X0z-6V-siy" customClass="ShowHealthTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="283" width="414" height="54"/>
+                                        <rect key="frame" x="0.0" y="337" width="414" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X0z-6V-siy" id="jmJ-Vj-fR5">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
@@ -449,7 +475,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SectionType1TableViewCell" rowHeight="54" id="UPB-OW-iNo" customClass="SectionType1TableViewCell" customModule="RiafyHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="337" width="414" height="54"/>
+                                        <rect key="frame" x="0.0" y="391" width="414" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UPB-OW-iNo" id="gTy-Vk-Zua">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
@@ -475,7 +501,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleTableViewCell" rowHeight="303" id="MJ3-pM-nof" customClass="ArticleTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="391" width="414" height="303"/>
+                                        <rect key="frame" x="0.0" y="445" width="414" height="303"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MJ3-pM-nof" id="7EP-zG-kTN">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
