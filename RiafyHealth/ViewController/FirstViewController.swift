@@ -35,7 +35,25 @@ class FirstViewController: UIViewController {
         
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if let healthData = healthDataViewModel {
+             healthData.levelTimer.invalidate()
+        }
+       
+    }
+       
+    
     func setUpViewModels() {
+        
+        if let homeView = homeViewModel {
+            
+            homeListView.delegate = homeView
+            homeListView.dataSource = homeView
+            homeListView.estimatedRowHeight = 54
+            
+        }
+        
         if let healthData = healthDataViewModel {
             homeListView.delegate = healthData
             homeListView.dataSource = healthData
@@ -45,13 +63,7 @@ class FirstViewController: UIViewController {
     
         }
         
-        if let homeView = homeViewModel {
-            
-            homeListView.delegate = homeView
-            homeListView.dataSource = homeView
-            homeListView.estimatedRowHeight = 54
-            
-        }
+        
         
         homeListView.rowHeight = UITableView.automaticDimension
     }
@@ -62,6 +74,7 @@ class FirstViewController: UIViewController {
             guard let vc = self else {return}
             vc.homeListView.reloadData()
         }
+        
         
     }
 

@@ -7,13 +7,20 @@
 //
 
 import UIKit
+import AVFoundation
+import CoreAudio
 
 class HealthDataViewModel: NSObject {
     
     var healthDataModel: HealthDataModel? = nil
     var tableReloadHandler: (() -> ())? = nil
     var cellModels = [CellConfigModel]()
-
+    var levelTimer = Timer()
+    
+//    var recorder: AVAudioRecorder!
+//    var levelTimer = Timer()
+//    var LEVEL_THRESHOLD: Float = 0
+//    
     override init() {
         super.init()
         callHealthDataAPI()
@@ -26,7 +33,7 @@ class HealthDataViewModel: NSObject {
                 self.healthDataModel = data.healthDataModel
                 self.addCellModels()
                 self.tableReloadHandler?()
-                
+               // self.soundDecibelCheck()
                 
             case .failure(errorStr: let errStr, model: _):
                 print("errStr = \(errStr)")
@@ -65,6 +72,50 @@ class HealthDataViewModel: NSObject {
         
   
     }
+    
+//    func soundDecibelCheck() {
+//        let documents = URL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0])
+//        let url = documents.appendingPathComponent("record.caf")
+//        let recordSettings: [String: Any] = [
+//           AVFormatIDKey:              kAudioFormatAppleIMA4,
+//           AVSampleRateKey:            44100.0,
+//           AVNumberOfChannelsKey:      2,
+//           AVEncoderBitRateKey:        12800,
+//           AVLinearPCMBitDepthKey:     16,
+//           AVEncoderAudioQualityKey:   AVAudioQuality.max.rawValue
+//        ]
+//
+//        let audioSession = AVAudioSession.sharedInstance()
+//        do {
+//           try audioSession.setCategory(AVAudioSession.Category.playAndRecord)
+//           try audioSession.setActive(true)
+//           try recorder = AVAudioRecorder(url:url, settings: recordSettings)
+//
+//        } catch {
+//           return
+//        }
+//
+//        recorder.prepareToRecord()
+//        recorder.isMeteringEnabled = true
+//
+//        recorder.record()
+//
+//        levelTimer = Timer.scheduledTimer(timeInterval: 0.02, target: self, selector: #selector(levelTimerCallback), userInfo: nil, repeats: true)
+//    }
+//
+//    @objc func levelTimerCallback() {
+//        recorder.updateMeters()
+//
+//        let level = recorder.averagePower(forChannel: 0)
+//        let result = pow(10.0, level / 20.0) * 120.0
+//
+//        let isLoud = result > LEVEL_THRESHOLD
+//        print("JJK1LEVEL_THRESHOLD = \(LEVEL_THRESHOLD)")
+//        print("JJK2result = \(result)")
+//        print("JJK3isLoud = \(isLoud)")
+//
+//    }
+    
     
     
     func newCellTypeBasedOnCellModel(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, cellModel: CellConfigModel) -> UITableViewCell {
@@ -107,6 +158,8 @@ class HealthDataViewModel: NSObject {
         case .soundLevel:
             if let cell = tableView.dequeueReusableCell(withIdentifier: SoundLevelCheckingTableViewCell.identifier, for: indexPath) as? SoundLevelCheckingTableViewCell {
                  cell.cellModel = cellModel
+                levelTimer = cell.levelTimer
+               //  LEVEL_THRESHOLD = cell.LEVEL_THRESHOLD
                 cellClass = cell
             }
         
@@ -134,6 +187,10 @@ class HealthDataViewModel: NSObject {
         }
 
         return UIView()
+    }
+    
+    deinit {
+        
     }
     
     
