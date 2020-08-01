@@ -417,7 +417,7 @@
                                             <outlet property="viewBase" destination="wju-ZO-4rJ" id="jyg-DV-zYQ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="3jN-Ic-Kzo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SleepAnalysisTableViewCell" rowHeight="120" id="3jN-Ic-Kzo" customClass="SleepAnalysisTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="337" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3jN-Ic-Kzo" id="ujV-km-3Zv">
@@ -460,16 +460,28 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="lastBaseline" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lKw-3O-Z2w">
-                                                                    <rect key="frame" x="0.0" y="50" width="122.5" height="33"/>
+                                                                    <rect key="frame" x="0.0" y="50" width="109" height="33"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,085" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9n-EZ-vfz">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="74" height="32.5"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9n-EZ-vfz">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="16" height="32.5"/>
                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juz-Rd-aku">
-                                                                            <rect key="frame" x="78" y="9.5" width="44.5" height="20.5"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juz-Rd-aku">
+                                                                            <rect key="frame" x="20" y="9.5" width="17" height="20.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmn-VE-hQj">
+                                                                            <rect key="frame" x="41" y="0.0" width="34.5" height="32.5"/>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0s4-Lb-Lyw">
+                                                                            <rect key="frame" x="79.5" y="9.5" width="29.5" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
@@ -503,6 +515,14 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="hrLB" destination="k9n-EZ-vfz" id="wbb-Ta-NkA"/>
+                                            <outlet property="hrTitleLB" destination="juz-Rd-aku" id="bte-BS-3wz"/>
+                                            <outlet property="iconImgView" destination="YeE-sG-4An" id="Wmv-SZ-WEi"/>
+                                            <outlet property="mainTitleLB" destination="h7C-1O-MLB" id="qae-YH-gq7"/>
+                                            <outlet property="minLB" destination="pmn-VE-hQj" id="RgA-8X-eVA"/>
+                                            <outlet property="minTitleLB" destination="0s4-Lb-Lyw" id="o9r-Ia-EE0"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowHealthTableViewCell" rowHeight="54" id="X0z-6V-siy" customClass="ShowHealthTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="457" width="414" height="54"/>

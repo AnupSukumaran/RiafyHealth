@@ -52,6 +52,7 @@
 		18BE8EA424D5DDD60094B00A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8EA324D5DDD60094B00A /* UIViewController+Ext.swift */; };
 		18BE8EA724D5ED3B0094B00A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8EA624D5ED3B0094B00A /* WebViewController.swift */; };
 		18BE8EAD24D5F1090094B00A /* search.html in Resources */ = {isa = PBXBuildFile; fileRef = 18BE8EAC24D5F1090094B00A /* search.html */; };
+		18BE8EAF24D602AE0094B00A /* SleepAnalysisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8EAE24D602AE0094B00A /* SleepAnalysisTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		18BE8EA324D5DDD60094B00A /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		18BE8EA624D5ED3B0094B00A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		18BE8EAC24D5F1090094B00A /* search.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = search.html; sourceTree = "<group>"; };
+		18BE8EAE24D602AE0094B00A /* SleepAnalysisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAnalysisTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +258,7 @@
 				18BE8E9224D5C1380094B00A /* ArticleTableViewCell.swift */,
 				18BE8E9724D5C2020094B00A /* ShowHealthTableViewCell.swift */,
 				18BE8E9D24D5DB280094B00A /* ArticleWebViewTableViewCell.swift */,
+				18BE8EAE24D602AE0094B00A /* SleepAnalysisTableViewCell.swift */,
 			);
 			path = CellViewClass;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				18BE8E5D24D58F820094B00A /* Steps.swift in Sources */,
 				18BE8E8724D5B6790094B00A /* StepsCellModel.swift in Sources */,
 				18BE8E3B24D588690094B00A /* FirstViewController.swift in Sources */,
+				18BE8EAF24D602AE0094B00A /* SleepAnalysisTableViewCell.swift in Sources */,
 				18BE8E4F24D58C4E0094B00A /* NSObject+Ext.swift in Sources */,
 				18BE8E5A24D58F820094B00A /* HomeModel.swift in Sources */,
 				18BE8E9A24D5D2D90094B00A /* SectionType2TableViewCell.swift in Sources */,
