@@ -22,6 +22,12 @@ class FirstViewController: UIViewController {
         }
     }
     
+    var healthDataViewModel: HealthDataViewModel! {
+        didSet {
+            setHandlersForHealthDataViewModel()
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,13 +36,12 @@ class FirstViewController: UIViewController {
     }
     
     func setUpViewModels() {
-        if let artview = articleWebViewModel {
-            artview.viewHeight = homeListView.frame.height
-            homeListView.delegate = artview
-            homeListView.dataSource = artview
+        if let healthData = healthDataViewModel {
+            homeListView.delegate = healthData
+            homeListView.dataSource = healthData
             homeListView.estimatedRowHeight = 100
-             doneBtn.isHidden = false
-            navigationItem.title = "Article"
+            doneBtn.isHidden = true
+            navigationItem.title = "All Health Data"
     
         }
         
@@ -45,12 +50,20 @@ class FirstViewController: UIViewController {
             homeListView.delegate = homeView
             homeListView.dataSource = homeView
             homeListView.estimatedRowHeight = 54
-            doneBtn.isHidden = true
+            
         }
         
         homeListView.rowHeight = UITableView.automaticDimension
     }
     
+    
+    func setHandlersForHealthDataViewModel() {
+        healthDataViewModel.tableReloadHandler = { [weak self] in
+            guard let vc = self else {return}
+            vc.homeListView.reloadData()
+        }
+        
+    }
 
     
     func setHandlersForHomeViewModel() {
@@ -61,7 +74,7 @@ class FirstViewController: UIViewController {
         
         homeViewModel.showFullDataHandler = { [weak self] in
             guard let vc = self else {return}
-            
+            vc.callFirstViewController()
         }
         
         homeViewModel.selectedTheArticleHandler = { [weak self] in

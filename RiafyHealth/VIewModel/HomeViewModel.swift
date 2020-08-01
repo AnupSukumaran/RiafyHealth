@@ -62,67 +62,67 @@ class HomeViewModel: NSObject {
         
     }
     
-    func cellRowCountBasedOnCellModel(cellModel: CellConfigModel) -> Int{
-        
-        var cellCount = 0
-
-        
-        switch cellModel.celltype {
-            
-        case .activity:
-            cellCount = cellModel.rowCount
-            
-        case .steps:
-            cellCount = cellModel.rowCount
-            
-        case .articles:
-            cellCount = cellModel.rowCount
-        
-        case .showAllData:
-            cellCount = 1
-        }
-        
-        return cellCount
-    }
-    
-    func cellTypeBasedOnCellModel(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, cellModel: CellConfigModel) -> UITableViewCell {
-        
-        var cellClass = UITableViewCell()
-        
-        switch cellModel.celltype {
-            
-        case .activity:
-            
-            if let cell = tableView.dequeueReusableCell(withIdentifier: ActivityTableViewCell.identifier, for: indexPath) as? ActivityTableViewCell {
-                cell.cellModel = cellModel
-                cellClass = cell
-            }
-            
-        case .steps:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: StepsTableViewCell.identifier, for: indexPath) as? StepsTableViewCell {
-                cell.cellModel = cellModel
-                cellClass = cell
-            }
-            
-        case .articles:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: ArticleTableViewCell.identifier, for: indexPath) as? ArticleTableViewCell {
-                cell.cellIndex = indexPath.row
-                cell.cellModel = cellModel
-                cellClass = cell
-            }
-            
-        case .showAllData:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: ShowHealthTableViewCell.identifier, for: indexPath) as? ShowHealthTableViewCell {
-                cell.showFullDataHandler = showFullDataHandler
-                cellClass = cell
-            }
-        
-        }
-        
-        return cellClass
-        
-    }
-    
+//    func cellRowCountBasedOnCellModel(cellModel: CellConfigModel) -> Int{
+//
+//        var cellCount = 0
+//
+//
+//        switch cellModel.celltype {
+//
+//        case .activity:
+//            cellCount = cellModel.rowCount
+//
+//        case .steps:
+//            cellCount = cellModel.rowCount
+//
+//        case .articles:
+//            cellCount = cellModel.rowCount
+//
+//        case .showAllData:
+//            cellCount = cellModel.rowCount
+//        }
+//
+//        return cellCount
+//    }
+//
+//    func cellTypeBasedOnCellModel(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, cellModel: CellConfigModel) -> UITableViewCell {
+//
+//        var cellClass = UITableViewCell()
+//
+//        switch cellModel.celltype {
+//
+//        case .activity:
+//
+//            if let cell = tableView.dequeueReusableCell(withIdentifier: ActivityTableViewCell.identifier, for: indexPath) as? ActivityTableViewCell {
+//                cell.cellModel = cellModel
+//                cellClass = cell
+//            }
+//
+//        case .steps:
+//            if let cell = tableView.dequeueReusableCell(withIdentifier: StepsTableViewCell.identifier, for: indexPath) as? StepsTableViewCell {
+//                cell.cellModel = cellModel
+//                cellClass = cell
+//            }
+//
+//        case .articles:
+//            if let cell = tableView.dequeueReusableCell(withIdentifier: ArticleTableViewCell.identifier, for: indexPath) as? ArticleTableViewCell {
+//                cell.cellIndex = indexPath.row
+//                cell.cellModel = cellModel
+//                cellClass = cell
+//            }
+//
+//        case .showAllData:
+//            if let cell = tableView.dequeueReusableCell(withIdentifier: ShowHealthTableViewCell.identifier, for: indexPath) as? ShowHealthTableViewCell {
+//                cell.showFullDataHandler = showFullDataHandler
+//                cellClass = cell
+//            }
+//
+//        }
+//
+//        return cellClass
+//
+//    }
+//
     func returnSectionHeight(_ section: Int)  -> CGFloat {
         if section == 0 {
            return 54
@@ -131,33 +131,33 @@ class HomeViewModel: NSObject {
         } else {
            return 0
         }
-               
+
     }
-    
+
     func getSectionCells(_ tableView: UITableView, _ section: Int) -> UIView {
         if section == 0 {
             if let cell = tableView.dequeueReusableCell(withIdentifier: SectionType2TableViewCell.identifier) as? SectionType2TableViewCell {
                 return cell.contentView
             }
         }
-        
+
         if section == 3 {
             if let cell = tableView.dequeueReusableCell(withIdentifier: SectionType1TableViewCell.identifier) as? SectionType1TableViewCell {
                 return cell.contentView
             }
         }
-        
-        
+
+
         return UIView()
     }
-    
-    func selectTheArticleIndexOnly(cellModel: CellConfigModel) {
-        
-        if cellModel.celltype == .articles {
-            selectedTheArticleHandler?()
-        }
-        
-    }
+
+//    func selectTheArticleIndexOnly(cellModel: CellConfigModel) {
+//
+//        if cellModel.celltype == .articles {
+//            selectedTheArticleHandler?()
+//        }
+//
+//    }
 
 
 }
@@ -176,7 +176,7 @@ extension HomeViewModel: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return cellTypeBasedOnCellModel(tableView, cellForRowAt: indexPath, cellModel: cellModels[indexPath.section])
+        return cellTypeBasedOnCellModel(tableView, cellForRowAt: indexPath, cellModel: cellModels[indexPath.section], showFullDataHandler: showFullDataHandler)
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -188,7 +188,7 @@ extension HomeViewModel: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectTheArticleIndexOnly(cellModel: cellModels[indexPath.section])
+        selectTheArticleIndexOnly(cellModel: cellModels[indexPath.section], hander: selectedTheArticleHandler)
     }
     
     

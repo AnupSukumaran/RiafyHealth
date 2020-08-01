@@ -33,6 +33,20 @@ class StepsTableViewCell: UITableViewCell {
         }
     }
     
+    var cellModelForHealthData: CellConfigModel? {
+       didSet {
+           guard let cellMod = cellModelForHealthData as? StepsCellModel else {return}
+        
+           let stepsModel = cellMod.steps
+           
+           callImage(urlStr: stepsModel.icon ?? "", imgView: iconImgView)
+           lbStepsMainTitle.text = stepsModel.name ?? "-"
+           lbStepsData.text = String(stepsModel.value ?? 0)
+        lbStepsTitle.text = (stepsModel.name ?? "-") == "Stand hours" ? "hr" : "kcal"
+           
+       }
+    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

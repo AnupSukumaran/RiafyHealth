@@ -16,16 +16,20 @@ extension UIViewController {
         return nav
     }
     
+    func navPush(_ vc: UIViewController, title: String) {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: title, style: .plain, target: nil, action: nil)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
     func callFirstViewController() {
         guard let vc = UIStoryboard.firstViewController() else {return}
-        vc.articleWebViewModel = ArticleWebViewModel()
-        present(nav(vc, present: .formSheet), animated: true, completion: nil)
+        vc.healthDataViewModel = HealthDataViewModel()
+        navPush(vc, title: "Summary")
     }
     
     func callWebViewConroller() {
         guard let vc = UIStoryboard.webViewController() else {return}
-               
         present(nav(vc, present: .formSheet), animated: true, completion: nil)
     }
 }

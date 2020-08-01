@@ -13,8 +13,8 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 
 import Foundation
 struct HealthDataModel : Codable {
-	let standHours : StandHours?
-	let activeEnergy : ActiveEnergy?
+	let standHours : Steps?
+	let activeEnergy : Steps?
 	let soundLevels : SoundLevels?
 	let sleepHours : SleepHours?
 
@@ -28,8 +28,8 @@ struct HealthDataModel : Codable {
 
 	init(from decoder: Decoder) throws {
 		let values = try decoder.container(keyedBy: CodingKeys.self)
-		standHours = try values.decodeIfPresent(StandHours.self, forKey: .standHours)
-		activeEnergy = try values.decodeIfPresent(ActiveEnergy.self, forKey: .activeEnergy)
+		standHours = try values.decodeIfPresent(Steps.self, forKey: .standHours)
+		activeEnergy = try values.decodeIfPresent(Steps.self, forKey: .activeEnergy)
 		soundLevels = try values.decodeIfPresent(SoundLevels.self, forKey: .soundLevels)
 		sleepHours = try values.decodeIfPresent(SleepHours.self, forKey: .sleepHours)
 	}
