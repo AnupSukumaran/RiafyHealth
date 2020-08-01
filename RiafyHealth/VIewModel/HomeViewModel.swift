@@ -109,6 +109,34 @@ class HomeViewModel: NSObject {
         return cellClass
         
     }
+    
+    func returnSectionHeight(_ section: Int)  -> CGFloat {
+        if section == 0 {
+           return 54
+        } else if section == 2 {
+           return 54
+        } else {
+           return 0
+        }
+               
+    }
+    
+    func getSectionCells(_ tableView: UITableView, _ section: Int) -> UIView {
+        if section == 0 {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: SectionType2TableViewCell.identifier) as? SectionType2TableViewCell {
+                return cell.contentView
+            }
+        }
+        
+        if section == 2 {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: SectionType1TableViewCell.identifier) as? SectionType1TableViewCell {
+                return cell.contentView
+            }
+        }
+        
+        
+        return UIView()
+    }
 
 }
 
@@ -130,32 +158,11 @@ extension HomeViewModel: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if section == 0 {
-            if let cell = tableView.dequeueReusableCell(withIdentifier: SectionType2TableViewCell.identifier) as? SectionType2TableViewCell {
-                return cell.contentView
-            }
-        }
-        
-        if section == 2 {
-            if let cell = tableView.dequeueReusableCell(withIdentifier: SectionType1TableViewCell.identifier) as? SectionType1TableViewCell {
-                return cell.contentView
-            }
-        }
-        
-        
-        return UIView()
+        return getSectionCells(tableView, section)
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == 0 {
-            return 54
-        } else if section == 2 {
-            return 54
-        } else {
-            return 0
-        }
-        
-        
+        return returnSectionHeight( section)
     }
     
     
