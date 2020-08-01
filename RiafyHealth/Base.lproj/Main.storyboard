@@ -55,8 +55,119 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SoundLevelCheckingTableViewCell" rowHeight="140" id="Z62-68-znf" customClass="SoundLevelCheckingTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z62-68-znf" id="I8t-hx-WFl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qpO-eE-CCn" customClass="UIViewCustom" customModule="RiafyHealth" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="12" width="384" height="127"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="KJ8-b4-YIK">
+                                                            <rect key="frame" x="16" y="12" width="352" height="99"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zr2-TK-Ol8">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="30"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="p37-50-L1x">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="278.5" height="30"/>
+                                                                            <subviews>
+                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummyFire" translatesAutoresizingMaskIntoConstraints="NO" id="PQT-S6-sGT">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="30" id="NhX-5z-Zoq"/>
+                                                                                        <constraint firstAttribute="height" constant="30" id="YKL-5x-wSO"/>
+                                                                                    </constraints>
+                                                                                </imageView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUd-Ke-mMi">
+                                                                                    <rect key="frame" x="38" y="0.0" width="240.5" height="30"/>
+                                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                                    <color key="textColor" red="0.91560751200000001" green="0.25326544049999999" blue="0.20106852049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:03 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3I-1V-mR4">
+                                                                            <rect key="frame" x="286.5" y="0.0" width="63.5" height="30"/>
+                                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="8D1-bl-LN7">
+                                                                    <rect key="frame" x="0.0" y="45" width="116" height="54"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="JOH-iC-fUi">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="70.5" height="27"/>
+                                                                            <subviews>
+                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick" translatesAutoresizingMaskIntoConstraints="NO" id="wRN-EY-DEg">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="27"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="30" id="Zsv-PO-8bc"/>
+                                                                                        <constraint firstAttribute="height" constant="27" id="vtf-Z1-Pxo"/>
+                                                                                    </constraints>
+                                                                                </imageView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1k-O2-fuj">
+                                                                                    <rect key="frame" x="37" y="0.0" width="33.5" height="27"/>
+                                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="lastBaseline" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="fNA-5w-zga">
+                                                                            <rect key="frame" x="0.0" y="36" width="116" height="18"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7-Day Exposure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JU2-P5-lL5">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="116" height="18"/>
+                                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="KJ8-b4-YIK" firstAttribute="leading" secondItem="qpO-eE-CCn" secondAttribute="leading" constant="16" id="16f-N3-tek"/>
+                                                        <constraint firstAttribute="trailing" secondItem="KJ8-b4-YIK" secondAttribute="trailing" constant="16" id="Gm5-lo-cPE"/>
+                                                        <constraint firstItem="KJ8-b4-YIK" firstAttribute="top" secondItem="qpO-eE-CCn" secondAttribute="top" constant="12" id="Ynv-Eq-af5"/>
+                                                        <constraint firstAttribute="bottom" secondItem="KJ8-b4-YIK" secondAttribute="bottom" constant="16" id="eTc-Dk-E2j"/>
+                                                        <constraint firstItem="Zr2-TK-Ol8" firstAttribute="width" secondItem="qpO-eE-CCn" secondAttribute="width" multiplier="0.912" id="tcp-aj-d8U"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="qpO-eE-CCn" secondAttribute="trailing" constant="15" id="3Oz-Y7-ZBV"/>
+                                                <constraint firstAttribute="bottom" secondItem="qpO-eE-CCn" secondAttribute="bottom" constant="1" id="JQq-Sd-VGF"/>
+                                                <constraint firstItem="qpO-eE-CCn" firstAttribute="leading" secondItem="I8t-hx-WFl" secondAttribute="leading" constant="15" id="e8S-Zp-VjO"/>
+                                                <constraint firstItem="qpO-eE-CCn" firstAttribute="top" secondItem="I8t-hx-WFl" secondAttribute="top" constant="12" id="eWc-CR-r4g"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="exposureLB" destination="JU2-P5-lL5" id="7rs-DS-flr"/>
+                                            <outlet property="iconImgView" destination="PQT-S6-sGT" id="yNe-zV-qLc"/>
+                                            <outlet property="soundCheckImgView" destination="wRN-EY-DEg" id="M4J-ZQ-hr4"/>
+                                            <outlet property="soundLevelTitleLB" destination="XUd-Ke-mMi" id="uNb-wJ-hHw"/>
+                                            <outlet property="soundOkLB" destination="y1k-O2-fuj" id="tn5-0b-d4F"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SectionType2TableViewCell" rowHeight="54" id="pda-BP-Yyb" customClass="SectionType2TableViewCell" customModule="RiafyHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="54"/>
+                                        <rect key="frame" x="0.0" y="168" width="414" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pda-BP-Yyb" id="Ggk-lR-BSo">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
@@ -82,7 +193,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityTableViewCell" rowHeight="135" id="jDr-qd-b3f" customClass="ActivityTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="82" width="414" height="135"/>
+                                        <rect key="frame" x="0.0" y="222" width="414" height="135"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jDr-qd-b3f" id="ufR-EH-7h1">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
@@ -320,7 +431,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StepsTableViewCell" rowHeight="120" id="Izy-C0-EHV" customClass="StepsTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="217" width="414" height="120"/>
+                                        <rect key="frame" x="0.0" y="357" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Izy-C0-EHV" id="aFb-eS-2Di">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
@@ -418,7 +529,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SleepAnalysisTableViewCell" rowHeight="120" id="3jN-Ic-Kzo" customClass="SleepAnalysisTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="337" width="414" height="120"/>
+                                        <rect key="frame" x="0.0" y="477" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3jN-Ic-Kzo" id="ujV-km-3Zv">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
@@ -525,7 +636,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowHealthTableViewCell" rowHeight="54" id="X0z-6V-siy" customClass="ShowHealthTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="457" width="414" height="54"/>
+                                        <rect key="frame" x="0.0" y="597" width="414" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X0z-6V-siy" id="jmJ-Vj-fR5">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
@@ -583,7 +694,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SectionType1TableViewCell" rowHeight="54" id="UPB-OW-iNo" customClass="SectionType1TableViewCell" customModule="RiafyHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="511" width="414" height="54"/>
+                                        <rect key="frame" x="0.0" y="651" width="414" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UPB-OW-iNo" id="gTy-Vk-Zua">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
@@ -609,7 +720,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleTableViewCell" rowHeight="303" id="MJ3-pM-nof" customClass="ArticleTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="565" width="414" height="303"/>
+                                        <rect key="frame" x="0.0" y="705" width="414" height="303"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MJ3-pM-nof" id="7EP-zG-kTN">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
@@ -690,7 +801,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleWebViewTableViewCell" rowHeight="53" id="oq6-C5-Ui0" customClass="ArticleWebViewTableViewCell" customModule="RiafyHealth" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="868" width="414" height="53"/>
+                                        <rect key="frame" x="0.0" y="1008" width="414" height="53"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oq6-C5-Ui0" id="4El-z5-Mdj">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
@@ -863,5 +974,6 @@
     <resources>
         <image name="arrowImg" width="24" height="24"/>
         <image name="dummyFire" width="48" height="48"/>
+        <image name="tick" width="96" height="96"/>
     </resources>
 </document>

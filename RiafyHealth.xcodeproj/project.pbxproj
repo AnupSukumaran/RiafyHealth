@@ -53,6 +53,7 @@
 		18BE8EA724D5ED3B0094B00A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8EA624D5ED3B0094B00A /* WebViewController.swift */; };
 		18BE8EAD24D5F1090094B00A /* search.html in Resources */ = {isa = PBXBuildFile; fileRef = 18BE8EAC24D5F1090094B00A /* search.html */; };
 		18BE8EAF24D602AE0094B00A /* SleepAnalysisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8EAE24D602AE0094B00A /* SleepAnalysisTableViewCell.swift */; };
+		18BE8EB124D606F90094B00A /* SoundLevelCheckingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8EB024D606F90094B00A /* SoundLevelCheckingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,7 @@
 		18BE8EA624D5ED3B0094B00A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		18BE8EAC24D5F1090094B00A /* search.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = search.html; sourceTree = "<group>"; };
 		18BE8EAE24D602AE0094B00A /* SleepAnalysisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAnalysisTableViewCell.swift; sourceTree = "<group>"; };
+		18BE8EB024D606F90094B00A /* SoundLevelCheckingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLevelCheckingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 				18BE8E9724D5C2020094B00A /* ShowHealthTableViewCell.swift */,
 				18BE8E9D24D5DB280094B00A /* ArticleWebViewTableViewCell.swift */,
 				18BE8EAE24D602AE0094B00A /* SleepAnalysisTableViewCell.swift */,
+				18BE8EB024D606F90094B00A /* SoundLevelCheckingTableViewCell.swift */,
 			);
 			path = CellViewClass;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				18BE8EA724D5ED3B0094B00A /* WebViewController.swift in Sources */,
 				18BE8E9324D5C1380094B00A /* ArticleTableViewCell.swift in Sources */,
 				18BE8E7324D592340094B00A /* ModelResponse.swift in Sources */,
+				18BE8EB124D606F90094B00A /* SoundLevelCheckingTableViewCell.swift in Sources */,
 				18BE8E6D24D591240094B00A /* TypeAliases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
