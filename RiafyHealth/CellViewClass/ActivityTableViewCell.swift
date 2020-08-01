@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ActivityTableViewCell: UITableViewCell {
     
@@ -39,6 +40,20 @@ class ActivityTableViewCell: UITableViewCell {
     @IBOutlet weak var lbStandTimeData: UILabel!
     @IBOutlet weak var lbStandhrTitle: UILabel!
     @IBOutlet weak var viewDivider3: UIView!
+    
+    
+    var cellModel: CellConfigModel? {
+        didSet {
+            guard let cellMod = cellModel as? ActivityCellModel else {return}
+            let activityModel = cellMod.activity
+            
+            callImage(urlStr: activityModel.icon ?? "", imgView: iconImgView)
+            cellTitleLB.text = activityModel.name ?? "-"
+            lbCalories.text = String(activityModel.items?.move ?? 0)
+            lbMinuteData.text = String(activityModel.items?.exercise ?? 0)
+            lbStandTimeData.text = String(activityModel.items?.stand ?? 0)
+        }
+    }
     
     
     override func awakeFromNib() {

@@ -21,6 +21,18 @@ class StepsTableViewCell: UITableViewCell {
     @IBOutlet weak var lbStepsData: UILabel!
     @IBOutlet weak var lbStepsTitle: UILabel!
     
+    var cellModel: CellConfigModel? {
+        didSet {
+            guard let cellMod = cellModel as? StepsCellModel else {return}
+            let stepsModel = cellMod.steps
+            
+            callImage(urlStr: stepsModel.icon ?? "", imgView: iconImgView)
+            lbStepsMainTitle.text = stepsModel.name ?? "-"
+            lbStepsData.text = String(stepsModel.value ?? 0)
+            
+        }
+    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

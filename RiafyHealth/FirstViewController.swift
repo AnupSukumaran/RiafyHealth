@@ -12,7 +12,11 @@ class FirstViewController: UIViewController {
 
     @IBOutlet weak var homeListView: UITableView!
     
-    var homeViewModel: HomeViewModel!
+    var homeViewModel: HomeViewModel! {
+        didSet {
+            setHandlersForHomeViewModel()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +28,13 @@ class FirstViewController: UIViewController {
         homeListView.dataSource = homeViewModel
         homeListView.estimatedRowHeight = 54
         homeListView.rowHeight = UITableView.automaticDimension
+    }
+    
+    func setHandlersForHomeViewModel() {
+        homeViewModel.tableReloadHandler = { [weak self] in
+            guard let vc = self else {return}
+            vc.homeListView.reloadData()
+        }
     }
 
 

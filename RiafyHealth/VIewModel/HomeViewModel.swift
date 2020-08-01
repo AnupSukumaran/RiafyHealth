@@ -78,20 +78,31 @@ class HomeViewModel: NSObject {
         return cellCount
     }
     
-    func cellTypeBasedOnCellModel(cellModel: CellConfigModel) -> UITableViewCell {
+    func cellTypeBasedOnCellModel(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, cellModel: CellConfigModel) -> UITableViewCell {
         
         var cellClass = UITableViewCell()
         
         switch cellModel.celltype {
             
         case .activity:
-            break
+            
+            if let cell = tableView.dequeueReusableCell(withIdentifier: ActivityTableViewCell.identifier, for: indexPath) as? ActivityTableViewCell {
+                cell.cellModel = cellModel
+                cellClass = cell
+            }
             
         case .steps:
-            break
+            if let cell = tableView.dequeueReusableCell(withIdentifier: StepsTableViewCell.identifier, for: indexPath) as? StepsTableViewCell {
+                cell.cellModel = cellModel
+                cellClass = cell
+            }
             
         case .articles:
-            break
+            if let cell = tableView.dequeueReusableCell(withIdentifier: ArticleTableViewCell.identifier, for: indexPath) as? ArticleTableViewCell {
+                cell.cellIndex = indexPath.row
+                cell.cellModel = cellModel
+                cellClass = cell
+            }
         
         }
         
@@ -115,7 +126,7 @@ extension HomeViewModel: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return cellTypeBasedOnCellModel(cellModel: cellModels[indexPath.section])
+        return cellTypeBasedOnCellModel(tableView, cellForRowAt: indexPath, cellModel: cellModels[indexPath.section])
     }
     
     

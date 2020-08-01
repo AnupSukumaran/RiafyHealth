@@ -17,15 +17,23 @@ class ArticleTableViewCell: UITableViewCell {
     @IBOutlet weak var articleTitle: UILabel!
     @IBOutlet weak var lbArticleSubTitle: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var articlesArr = [Articles]()
+    var cellIndex = 0
+   var cellModel: CellConfigModel? {
+        didSet {
+            guard let cellMod = cellModel as? ArticlesCellModel else {return}
+            articlesArr = cellMod.articles
+            article = articlesArr[cellIndex]
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    var article: Articles? {
+        didSet{
+            guard let art = article else {return}
+            callImage(urlStr: art.image ?? "", imgView: imgView)
+            articleTitle.text = art.heading ?? "-"
+            lbArticleSubTitle.text = art.subheading ?? "-"
+        }
     }
 
 }
