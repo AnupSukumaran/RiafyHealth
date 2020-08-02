@@ -62,72 +62,12 @@ class HomeViewModel: NSObject {
         
     }
     
-//    func cellRowCountBasedOnCellModel(cellModel: CellConfigModel) -> Int{
-//
-//        var cellCount = 0
-//
-//
-//        switch cellModel.celltype {
-//
-//        case .activity:
-//            cellCount = cellModel.rowCount
-//
-//        case .steps:
-//            cellCount = cellModel.rowCount
-//
-//        case .articles:
-//            cellCount = cellModel.rowCount
-//
-//        case .showAllData:
-//            cellCount = cellModel.rowCount
-//        }
-//
-//        return cellCount
-//    }
-//
-//    func cellTypeBasedOnCellModel(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, cellModel: CellConfigModel) -> UITableViewCell {
-//
-//        var cellClass = UITableViewCell()
-//
-//        switch cellModel.celltype {
-//
-//        case .activity:
-//
-//            if let cell = tableView.dequeueReusableCell(withIdentifier: ActivityTableViewCell.identifier, for: indexPath) as? ActivityTableViewCell {
-//                cell.cellModel = cellModel
-//                cellClass = cell
-//            }
-//
-//        case .steps:
-//            if let cell = tableView.dequeueReusableCell(withIdentifier: StepsTableViewCell.identifier, for: indexPath) as? StepsTableViewCell {
-//                cell.cellModel = cellModel
-//                cellClass = cell
-//            }
-//
-//        case .articles:
-//            if let cell = tableView.dequeueReusableCell(withIdentifier: ArticleTableViewCell.identifier, for: indexPath) as? ArticleTableViewCell {
-//                cell.cellIndex = indexPath.row
-//                cell.cellModel = cellModel
-//                cellClass = cell
-//            }
-//
-//        case .showAllData:
-//            if let cell = tableView.dequeueReusableCell(withIdentifier: ShowHealthTableViewCell.identifier, for: indexPath) as? ShowHealthTableViewCell {
-//                cell.showFullDataHandler = showFullDataHandler
-//                cellClass = cell
-//            }
-//
-//        }
-//
-//        return cellClass
-//
-//    }
-//
+
     func returnSectionHeight(_ section: Int)  -> CGFloat {
         if section == 0 {
            return 54
         } else if section == 3 {
-           return 54
+           return 40
         } else {
            return 0
         }
@@ -150,14 +90,6 @@ class HomeViewModel: NSObject {
 
         return UIView()
     }
-
-//    func selectTheArticleIndexOnly(cellModel: CellConfigModel) {
-//
-//        if cellModel.celltype == .articles {
-//            selectedTheArticleHandler?()
-//        }
-//
-//    }
 
 
 }
