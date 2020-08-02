@@ -37,10 +37,19 @@ class WebViewController: UIViewController {
         let request = URLRequest(url: url)
         webView.load(request)
         
-//        let myURL = URL(string: urlString)
-//               var req = URLRequest(url: myURL!)
-//               req.cachePolicy = .returnCacheDataElseLoad
-//               webView.load(req)
+    }
+    
+    func shareButtonClicked(urlString: String) {
+    
+        let message = "Share this App"
+       
+        if let link = NSURL(string: urlString)
+        {
+            let objectsToShare = [message,link] as [Any]
+            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+            activityVC.excludedActivityTypes = [UIActivity.ActivityType.airDrop, UIActivity.ActivityType.addToReadingList]
+            self.present(activityVC, animated: true, completion: nil)
+        }
     }
     
     @IBAction func doneBtnAction(_ sender: UIButton) {
@@ -61,8 +70,22 @@ extension WebViewController: WKUIDelegate, WKNavigationDelegate {
         
     }
     
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+       decisionHandler(.allow)
+       guard let urlAsString = navigationAction.request.url?.absoluteString.lowercased() else {
+           return
+       }
     
+        let ulrD = URL(string: urlAsString)
+        
+        if ulrD!.lastPathComponent == "sharetheapp" {
+            shareButtonClicked(urlString: urlAsString)
+            
+        } else {
+        
+            // UIApplication.shared.open(ulrD!) { (result) in}
+        }
     
-   
+    }
     
 }
