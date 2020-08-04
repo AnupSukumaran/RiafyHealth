@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1804983324D98BC800D6B895 /* FavouriteHeaderCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804983224D98BC800D6B895 /* FavouriteHeaderCellModel.swift */; };
 		18BE8E3724D588690094B00A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E3624D588690094B00A /* AppDelegate.swift */; };
 		18BE8E3924D588690094B00A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E3824D588690094B00A /* SceneDelegate.swift */; };
 		18BE8E3B24D588690094B00A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E3A24D588690094B00A /* FirstViewController.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1804983224D98BC800D6B895 /* FavouriteHeaderCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteHeaderCellModel.swift; sourceTree = "<group>"; };
 		18BE8E3324D588690094B00A /* RiafyHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiafyHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BE8E3624D588690094B00A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18BE8E3824D588690094B00A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,7 +148,7 @@
 				18BE8E3824D588690094B00A /* SceneDelegate.swift */,
 				18BE8E4D24D58C370094B00A /* Exts */,
 				18BE8E7B24D59F7E0094B00A /* Views */,
-				18BE8E7424D595960094B00A /* ViewModel */,
+				18BE8E7424D595960094B00A /* VIewModel */,
 				18BE8E5024D58D990094B00A /* NetworkModule */,
 				18BE8E5324D58E360094B00A /* Models */,
 				18BE8E3C24D588690094B00A /* Main.storyboard */,
@@ -214,14 +216,14 @@
 			path = HealthDataModel;
 			sourceTree = "<group>";
 		};
-		18BE8E7424D595960094B00A /* ViewModel */ = {
+		18BE8E7424D595960094B00A /* VIewModel */ = {
 			isa = PBXGroup;
 			children = (
 				18BE8E7524D595CB0094B00A /* HomeViewModel.swift */,
 				18BE8E7924D59B480094B00A /* HealthDataViewModel.swift */,
 				18BE8E9F24D5DC4A0094B00A /* ArticleWebViewModel.swift */,
 			);
-			path = ViewModel;
+			path = VIewModel;
 			sourceTree = "<group>";
 		};
 		18BE8E7B24D59F7E0094B00A /* Views */ = {
@@ -252,6 +254,7 @@
 				18BE8E9B24D5D6EA0094B00A /* ShowFullDataCellModel.swift */,
 				18BE8EB224D608E80094B00A /* EnvironmentCellModel.swift */,
 				18BE8EB424D609530094B00A /* SleepAnalysisCellModel.swift */,
+				1804983224D98BC800D6B895 /* FavouriteHeaderCellModel.swift */,
 			);
 			path = CellModels;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				18BE8E9A24D5D2D90094B00A /* SectionType2TableViewCell.swift in Sources */,
 				18BE8E5224D58DF20094B00A /* APILib.swift in Sources */,
 				18BE8E7124D591FD0094B00A /* Results.swift in Sources */,
+				1804983324D98BC800D6B895 /* FavouriteHeaderCellModel.swift in Sources */,
 				18BE8E9824D5C2020094B00A /* ShowHealthTableViewCell.swift in Sources */,
 				18BE8E9124D5C12A0094B00A /* StepsTableViewCell.swift in Sources */,
 				18BE8EB524D609530094B00A /* SleepAnalysisCellModel.swift in Sources */,

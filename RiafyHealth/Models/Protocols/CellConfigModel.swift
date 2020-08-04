@@ -15,6 +15,7 @@ enum CellType {
     case showAllData
     case sleepAnalysis
     case soundLevel
+    case favHeader
 }
 
 protocol CellConfigModel {

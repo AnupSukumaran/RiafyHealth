@@ -48,6 +48,9 @@ extension NSObject {
             
         case .soundLevel:
             cellCount = cellModel.rowCount
+            
+        case .favHeader:
+            cellCount = cellModel.rowCount
         }
         
         return cellCount

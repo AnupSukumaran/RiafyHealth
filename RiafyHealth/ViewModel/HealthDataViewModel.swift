@@ -72,52 +72,7 @@ class HealthDataViewModel: NSObject {
         
   
     }
-    
-//    func soundDecibelCheck() {
-//        let documents = URL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0])
-//        let url = documents.appendingPathComponent("record.caf")
-//        let recordSettings: [String: Any] = [
-//           AVFormatIDKey:              kAudioFormatAppleIMA4,
-//           AVSampleRateKey:            44100.0,
-//           AVNumberOfChannelsKey:      2,
-//           AVEncoderBitRateKey:        12800,
-//           AVLinearPCMBitDepthKey:     16,
-//           AVEncoderAudioQualityKey:   AVAudioQuality.max.rawValue
-//        ]
-//
-//        let audioSession = AVAudioSession.sharedInstance()
-//        do {
-//           try audioSession.setCategory(AVAudioSession.Category.playAndRecord)
-//           try audioSession.setActive(true)
-//           try recorder = AVAudioRecorder(url:url, settings: recordSettings)
-//
-//        } catch {
-//           return
-//        }
-//
-//        recorder.prepareToRecord()
-//        recorder.isMeteringEnabled = true
-//
-//        recorder.record()
-//
-//        levelTimer = Timer.scheduledTimer(timeInterval: 0.02, target: self, selector: #selector(levelTimerCallback), userInfo: nil, repeats: true)
-//    }
-//
-//    @objc func levelTimerCallback() {
-//        recorder.updateMeters()
-//
-//        let level = recorder.averagePower(forChannel: 0)
-//        let result = pow(10.0, level / 20.0) * 120.0
-//
-//        let isLoud = result > LEVEL_THRESHOLD
-//        print("JJK1LEVEL_THRESHOLD = \(LEVEL_THRESHOLD)")
-//        print("JJK2result = \(result)")
-//        print("JJK3isLoud = \(isLoud)")
-//
-//    }
-    
-    
-    
+
     func newCellTypeBasedOnCellModel(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, cellModel: CellConfigModel) -> UITableViewCell {
         
         var cellClass = UITableViewCell()
@@ -160,6 +115,12 @@ class HealthDataViewModel: NSObject {
                  cell.cellModel = cellModel
                 levelTimer = cell.levelTimer
                //  LEVEL_THRESHOLD = cell.LEVEL_THRESHOLD
+                cellClass = cell
+            }
+            
+        case .favHeader:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: SectionType2TableViewCell.identifier, for: indexPath) as? SectionType2TableViewCell {
+                 cell.cellModel = cellModel
                 cellClass = cell
             }
         

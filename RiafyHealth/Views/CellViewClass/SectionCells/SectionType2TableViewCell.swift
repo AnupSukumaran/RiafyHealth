@@ -12,5 +12,10 @@ class SectionType2TableViewCell: UITableViewCell {
 
     @IBOutlet weak var sectionTitle: UILabel!
     
-
+    var cellModel: CellConfigModel? {
+        didSet {
+            guard let cellMod = cellModel as? FavouriteHeaderCellModel else {return}
+            sectionTitle.text = cellMod.title
+        }
+    }
 }
