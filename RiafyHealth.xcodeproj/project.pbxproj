@@ -142,20 +142,16 @@
 		18BE8E3524D588690094B00A /* RiafyHealth */ = {
 			isa = PBXGroup;
 			children = (
-				18BE8EAB24D5F0F60094B00A /* HTMLFile */,
-				18BE8EA524D5ED180094B00A /* ViewController */,
-				18BE8E7424D595960094B00A /* VIewModel */,
-				18BE8E8D24D5C0F30094B00A /* CellViewClass */,
-				18BE8E8024D5B4920094B00A /* Protocols */,
-				18BE8E7B24D59F7E0094B00A /* Views */,
-				18BE8E5324D58E360094B00A /* Models */,
-				18BE8E5024D58D990094B00A /* NetworkModule */,
-				18BE8E4D24D58C370094B00A /* Exts */,
 				18BE8E3624D588690094B00A /* AppDelegate.swift */,
 				18BE8E3824D588690094B00A /* SceneDelegate.swift */,
+				18BE8E4D24D58C370094B00A /* Exts */,
+				18BE8E7B24D59F7E0094B00A /* Views */,
+				18BE8E7424D595960094B00A /* ViewModel */,
+				18BE8E5024D58D990094B00A /* NetworkModule */,
+				18BE8E5324D58E360094B00A /* Models */,
 				18BE8E3C24D588690094B00A /* Main.storyboard */,
-				18BE8E3F24D588700094B00A /* Assets.xcassets */,
 				18BE8E4124D588700094B00A /* LaunchScreen.storyboard */,
+				18BE8EAB24D5F0F60094B00A /* Resources */,
 				18BE8E4424D588700094B00A /* Info.plist */,
 				18BE8E7724D598A70094B00A /* SecondViewController.swift */,
 			);
@@ -187,6 +183,7 @@
 		18BE8E5324D58E360094B00A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				18BE8E8024D5B4920094B00A /* Protocols */,
 				18BE8E8324D5B5520094B00A /* CellModels */,
 				18BE8E5F24D58FC00094B00A /* HealthDataModel */,
 				18BE8E5424D58F660094B00A /* HomeModel */,
@@ -217,19 +214,21 @@
 			path = HealthDataModel;
 			sourceTree = "<group>";
 		};
-		18BE8E7424D595960094B00A /* VIewModel */ = {
+		18BE8E7424D595960094B00A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				18BE8E7524D595CB0094B00A /* HomeViewModel.swift */,
 				18BE8E7924D59B480094B00A /* HealthDataViewModel.swift */,
 				18BE8E9F24D5DC4A0094B00A /* ArticleWebViewModel.swift */,
 			);
-			path = VIewModel;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		18BE8E7B24D59F7E0094B00A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				18BE8E8D24D5C0F30094B00A /* CellViewClass */,
+				18BE8EA524D5ED180094B00A /* ViewController */,
 				18BE8E7C24D59F9E0094B00A /* UIButtonCustom.swift */,
 				18BE8E7D24D59F9E0094B00A /* UIViewCustom.swift */,
 			);
@@ -290,12 +289,13 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		18BE8EAB24D5F0F60094B00A /* HTMLFile */ = {
+		18BE8EAB24D5F0F60094B00A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				18BE8E3F24D588700094B00A /* Assets.xcassets */,
 				18BE8EAC24D5F1090094B00A /* search.html */,
 			);
-			path = HTMLFile;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
