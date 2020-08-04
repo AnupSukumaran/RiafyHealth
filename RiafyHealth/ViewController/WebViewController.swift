@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import StoreKit
 
 class WebViewController: UIViewController {
     
@@ -52,6 +53,17 @@ class WebViewController: UIViewController {
         }
     }
     
+    func writeAppReviewFunc() {
+        let productURL = URL(string: "https://itunes.apple.com/us/app/sutiawbapp/id1166499")!
+        var components = URLComponents(url: productURL, resolvingAgainstBaseURL: false)
+        components?.queryItems = [
+          URLQueryItem(name: "action", value: "write-review")
+        ]
+        
+        guard let writeReviewURL = components?.url else {return}
+        UIApplication.shared.open(writeReviewURL)
+    }
+    
     @IBAction func doneBtnAction(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
@@ -72,19 +84,22 @@ extension WebViewController: WKUIDelegate, WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
        decisionHandler(.allow)
-       guard let urlAsString = navigationAction.request.url?.absoluteString.lowercased() else {
-           return
-       }
-    
-        let ulrD = URL(string: urlAsString)
+       guard let urlAsString = navigationAction.request.url?.absoluteString.lowercased() else {return}
+       let ulrD = URL(string: urlAsString)
         
         if ulrD!.lastPathComponent == "sharetheapp" {
             shareButtonClicked(urlString: urlAsString)
-            
-        } else {
-        
-            // UIApplication.shared.open(ulrD!) { (result) in}
         }
+            
+        if ulrD!.lastPathComponent == "ratetheapp" {
+            if #available(iOS 10.3, *) {
+                SKStoreReviewController.requestReview()
+            } else {
+                writeAppReviewFunc()
+            }
+        }
+        
+        
     
     }
     
