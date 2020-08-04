@@ -25,32 +25,35 @@ class SoundLevelCheckingTableViewCell: UITableViewCell {
     
     var recorder: AVAudioRecorder!
     var levelTimer = Timer()
-
+    var okImg = UIImage()
+    var errorImg = UIImage()
     
     
     var cellModel: CellConfigModel? {
-       didSet {
-           guard let cellMod = cellModel as? EnvironmentCellModel else {return}
-          soundLevels = cellMod.soundLevels
-           callImage(urlStr: soundLevels.icon ?? "", imgView: iconImgView)
+        didSet {
+            guard let cellMod = cellModel as? EnvironmentCellModel else {return}
+            soundLevels = cellMod.soundLevels
+            callImage(urlStr: soundLevels.icon ?? "", imgView: iconImgView)
             soundLevelTitleLB.text = soundLevels.name ?? "-"
-        
-        if let sLevel = soundLevels.value {
-            LEVEL_THRESHOLD = Float(sLevel)
 
-        }
-            
+            if let sLevel = soundLevels.value {
+                LEVEL_THRESHOLD = Float(sLevel)
+            }
         
-       }
+            
+            callImage(urlStr: soundLevels.iconError ?? "", imgView: soundCheckImgView) { img in
+                img.saveToDocuments(filename: "ErrorImg")
+            }
+            callImage(urlStr: soundLevels.iconOK ?? "", imgView: soundCheckImgView) { img in
+                img.saveToDocuments(filename: "OkImg")
+            }
+        }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         soundDecibelCheck()
     }
-    
-    
-
     
     func soundDecibelCheck() {
         let documents = URL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0])
@@ -90,33 +93,20 @@ class SoundLevelCheckingTableViewCell: UITableViewCell {
         let result = pow(10.0, level / 20.0) * 120.0
        
         let isLoud = result > LEVEL_THRESHOLD
-        print("JJK1LEVEL_THRESHOLD = \(LEVEL_THRESHOLD)")
-        print("JJK2result = \(result)")
-        print("JJK3isLoud = \(isLoud)")
         
         if isLoud {
-            soundCheckImgView.image = #imageLiteral(resourceName: "errorImg")
-             //callImage(urlStr: soundLevels.iconError ?? "", imgView: soundCheckImgView)
+            soundCheckImgView.image = UIImage().load(fileName: "ErrorImg") ?? UIImage(named: "errorImg")!
         } else {
-            soundCheckImgView.image = #imageLiteral(resourceName: "tick")
-            // callImage(urlStr: soundLevels.iconOK ?? "", imgView: soundCheckImgView)
+            soundCheckImgView.image = UIImage().load(fileName: "OkImg") ?? UIImage(named: "tick")!
         }
 
-    }
-    
-    
-    
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     override func prepareForReuse() {
         iconImgView = nil
         soundCheckImgView = nil
-        
     }
 
 }
+
+

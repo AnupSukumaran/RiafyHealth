@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1804983324D98BC800D6B895 /* FavouriteHeaderCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804983224D98BC800D6B895 /* FavouriteHeaderCellModel.swift */; };
 		1804983524D98E9D00D6B895 /* GetMoreHealthHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804983424D98E9D00D6B895 /* GetMoreHealthHeaderCell.swift */; };
+		1804983724D997E600D6B895 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804983624D997E600D6B895 /* UIImage+Ext.swift */; };
 		18BE8E3724D588690094B00A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E3624D588690094B00A /* AppDelegate.swift */; };
 		18BE8E3924D588690094B00A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E3824D588690094B00A /* SceneDelegate.swift */; };
 		18BE8E3B24D588690094B00A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE8E3A24D588690094B00A /* FirstViewController.swift */; };
@@ -63,6 +64,7 @@
 /* Begin PBXFileReference section */
 		1804983224D98BC800D6B895 /* FavouriteHeaderCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteHeaderCellModel.swift; sourceTree = "<group>"; };
 		1804983424D98E9D00D6B895 /* GetMoreHealthHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMoreHealthHeaderCell.swift; sourceTree = "<group>"; };
+		1804983624D997E600D6B895 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		18BE8E3324D588690094B00A /* RiafyHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiafyHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BE8E3624D588690094B00A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18BE8E3824D588690094B00A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				18BE8E6E24D5916D0094B00A /* String+Ext.swift */,
 				18BE8EA124D5DDC50094B00A /* UIStoryboard+Ext.swift */,
 				18BE8EA324D5DDD60094B00A /* UIViewController+Ext.swift */,
+				1804983624D997E600D6B895 /* UIImage+Ext.swift */,
 			);
 			path = Exts;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				1804983324D98BC800D6B895 /* FavouriteHeaderCellModel.swift in Sources */,
 				18BE8E9824D5C2020094B00A /* ShowHealthTableViewCell.swift in Sources */,
 				18BE8E9124D5C12A0094B00A /* StepsTableViewCell.swift in Sources */,
+				1804983724D997E600D6B895 /* UIImage+Ext.swift in Sources */,
 				18BE8EB524D609530094B00A /* SleepAnalysisCellModel.swift in Sources */,
 				18BE8E5B24D58F820094B00A /* Items.swift in Sources */,
 				18BE8E5E24D58F820094B00A /* Articles.swift in Sources */,
