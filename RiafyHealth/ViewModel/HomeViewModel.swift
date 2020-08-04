@@ -85,15 +85,5 @@ extension HomeViewModel: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectTheArticleIndexOnly(cellModel: cellModels[indexPath.section], hander: selectedTheArticleHandler)
     }
-      
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 }
