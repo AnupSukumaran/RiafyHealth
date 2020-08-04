@@ -12,15 +12,11 @@ class SectionType1TableViewCell: UITableViewCell {
 
     @IBOutlet weak var lbTitle: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    var cellModel: CellConfigModel? {
+       didSet {
+           guard let cellMod = cellModel as? FavouriteHeaderCellModel else {return}
+           lbTitle.text = cellMod.title
+       }
     }
 
 }

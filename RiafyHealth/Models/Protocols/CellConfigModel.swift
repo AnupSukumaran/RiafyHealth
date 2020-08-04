@@ -16,6 +16,7 @@ enum CellType {
     case sleepAnalysis
     case soundLevel
     case favHeader
+    case getMorehealth
 }
 
 protocol CellConfigModel {

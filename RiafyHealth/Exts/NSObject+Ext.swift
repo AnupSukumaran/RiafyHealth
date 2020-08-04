@@ -51,6 +51,9 @@ extension NSObject {
             
         case .favHeader:
             cellCount = cellModel.rowCount
+        
+        case .getMorehealth:
+            cellCount = cellModel.rowCount
         }
         
         return cellCount
@@ -85,6 +88,18 @@ extension NSObject {
         case .showAllData:
             if let cell = tableView.dequeueReusableCell(withIdentifier: ShowHealthTableViewCell.identifier, for: indexPath) as? ShowHealthTableViewCell {
                 cell.showFullDataHandler = showFullDataHandler
+                cellClass = cell
+            }
+            
+        case .favHeader:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: SectionType2TableViewCell.identifier, for: indexPath) as? SectionType2TableViewCell {
+                 cell.cellModel = cellModel
+                cellClass = cell
+            }
+            
+        case .getMorehealth:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: SectionType1TableViewCell.identifier, for: indexPath) as? SectionType1TableViewCell {
+                 cell.cellModel = cellModel
                 cellClass = cell
             }
             

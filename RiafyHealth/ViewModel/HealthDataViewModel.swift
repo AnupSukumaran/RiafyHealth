@@ -123,7 +123,12 @@ class HealthDataViewModel: NSObject {
                  cell.cellModel = cellModel
                 cellClass = cell
             }
-        
+        case .getMorehealth:
+            
+            if let cell = tableView.dequeueReusableCell(withIdentifier: SectionType1TableViewCell.identifier, for: indexPath) as? SectionType1TableViewCell {
+                 cell.cellModel = cellModel
+                cellClass = cell
+            }
         }
         
         return cellClass
