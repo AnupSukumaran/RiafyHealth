@@ -152,7 +152,7 @@
 				18BE8E3824D588690094B00A /* SceneDelegate.swift */,
 				18BE8E4D24D58C370094B00A /* Exts */,
 				18BE8E7B24D59F7E0094B00A /* Views */,
-				18BE8E7424D595960094B00A /* VIewModel */,
+				18BE8E7424D595960094B00A /* ViewModel */,
 				18BE8E5024D58D990094B00A /* NetworkModule */,
 				18BE8E5324D58E360094B00A /* Models */,
 				18BE8E3C24D588690094B00A /* Main.storyboard */,
@@ -221,14 +221,14 @@
 			path = HealthDataModel;
 			sourceTree = "<group>";
 		};
-		18BE8E7424D595960094B00A /* VIewModel */ = {
+		18BE8E7424D595960094B00A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				18BE8E7524D595CB0094B00A /* HomeViewModel.swift */,
 				18BE8E7924D59B480094B00A /* HealthDataViewModel.swift */,
 				18BE8E9F24D5DC4A0094B00A /* ArticleWebViewModel.swift */,
 			);
-			path = VIewModel;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		18BE8E7B24D59F7E0094B00A /* Views */ = {

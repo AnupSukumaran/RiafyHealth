@@ -54,7 +54,7 @@ class WebViewController: UIViewController {
     }
     
     func writeAppReviewFunc() {
-        let productURL = URL(string: "https://itunes.apple.com/us/app/sutiawbapp/id1166499")!
+        let productURL = URL(string: "https://itunes.apple.com/us/app/rwdevcon-conference/id958625272?mt=8")!
         var components = URLComponents(url: productURL, resolvingAgainstBaseURL: false)
         components?.queryItems = [
           URLQueryItem(name: "action", value: "write-review")
@@ -83,23 +83,27 @@ extension WebViewController: WKUIDelegate, WKNavigationDelegate {
     }
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-       decisionHandler(.allow)
+       
        guard let urlAsString = navigationAction.request.url?.absoluteString.lowercased() else {return}
+        print("urlAsString = \(urlAsString)")
        let ulrD = URL(string: urlAsString)
+        
+        if urlAsString == "https://stories.riafy.me/" {
+            decisionHandler(.cancel)
+            return
+        }
         
         if ulrD!.lastPathComponent == "sharetheapp" {
             shareButtonClicked(urlString: urlAsString)
         }
-            
+        
+
         if ulrD!.lastPathComponent == "ratetheapp" {
-            if #available(iOS 10.3, *) {
-                SKStoreReviewController.requestReview()
-            } else {
-                writeAppReviewFunc()
-            }
+            self.writeAppReviewFunc()
         }
         
-        
+     
+        decisionHandler(.allow)
     
     }
     
